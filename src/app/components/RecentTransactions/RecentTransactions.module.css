@@ -1,0 +1,67 @@
+.recent_transactions {
+  width: 100%;
+}
+
+.recents {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  color: #01215b;
+}
+
+.recents h4 {
+  color: #a38526;
+  font-weight: 400;
+  font-family: "Courier Prime", monospace;
+  font-size: 1.2rem;
+}
+
+.latest {
+  background-color: white;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  height: inherit;
+}
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th {
+  text-align: left;
+  padding: 1rem 0rem;
+}
+
+.td {
+  text-align: left;
+  padding: 1rem 0rem;
+  border-bottom: #a38526 0.005rem solid;
+}
+
+.tr {
+  align-items: left;
+  margin-bottom: 0.5rem;
+}
+
+.view_all {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.view_all_text {
+  font-weight: 700;
+  font-size: 15px;
+  color: #01215b;
+}
+
+.va_arrow_right_gold {
+  width: 16px;
+}
