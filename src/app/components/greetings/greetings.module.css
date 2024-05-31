@@ -1,0 +1,9 @@
+.greetings{
+    display: flex;
+    gap: 460px;
+     margin-left: 360px;
+}
+.good{
+color:#01215B;
+font-weight: bold;
+}
