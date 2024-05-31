@@ -4,6 +4,7 @@ import Add from '../components/add-beneficiaries/Add';
 import Services from "../components/services/Services"
 import Sidebar from '../components/Sidebar/Sidebar';
 import Greetings from '../components/greetings/greetings';
+import Bottomcard from '../components/bottomcard/bottomcard';
 function page() {
 
   return (
@@ -36,7 +37,7 @@ function page() {
   </div>
   <div class={styles.bottomcard}>
     <div className={styles.up}>
-   Bottomcard
+  <Bottomcard/>
     </div>
     <div className={styles.down}>
       Footer

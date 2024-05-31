@@ -27,7 +27,7 @@ background-color:#d9d9d9 ;
 }
 
 .maincontent1{
-    background-color: #01215B;
+    background-color: blue;
      border-radius: 10px;
 }
 .maincontent2{
@@ -61,13 +61,21 @@ background-color:#d9d9d9 ;
 @media screen and (max-width: 960px) {
   .maincontent {
     grid-template-areas:
-      "maincontent1"
-      "maincontent21"
-      "maincontent22"
-      "bottomcard";
+        "header1"
+        "greetings"
+        "maincontent1"
+        "maincontent21"
+        "maincontent22"
+        "bottomcard";
     grid-template-columns: 1fr;
-    
+  }
+
+  /* Define styles for header1 and greetings */
+  .header1,
+  .greetings {
+    /* Add flexbox properties to display them in a column */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
   }
 }
-
-

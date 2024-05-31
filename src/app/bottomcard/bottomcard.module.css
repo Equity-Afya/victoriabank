@@ -1,0 +1,32 @@
+.card {
+  background-image: url('https://res.cloudinary.com/difjkimdu/image/upload/v1715773450/background-login-min_ixn7ri.jpg');
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 8px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust background color as needed */
+  z-index: 999; /* Set a high z-index to ensure the card is above other elements */
+}
+
+
+.icons {
+  display: flex;
+  width: 300px;
+  padding-left:0px;
+  
+}
+
+.icons img {
+  width: 150px;
+  padding: 2px;
+}

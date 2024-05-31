@@ -7,7 +7,7 @@ function Greetings() {
         <div className={Styles.good}>
        Good Day Eliud Njogu
         </div>
-        <div>
+        <div className={Styles.login}>
         Last login: 
         </div>
     </div>
