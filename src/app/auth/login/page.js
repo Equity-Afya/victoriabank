@@ -1,5 +1,5 @@
 import React from "react";
-
+import './login.css'
 const page = () => {
   return (
     <div>
@@ -57,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default page 
