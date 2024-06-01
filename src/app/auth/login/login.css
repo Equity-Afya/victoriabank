@@ -172,3 +172,8 @@ a {
     max-width: 85%;
   }
 }
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
