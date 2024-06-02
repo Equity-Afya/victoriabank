@@ -1,12 +1,18 @@
-import React from "react";
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+import styles from "./dashboard.module.css";
 
-const Dashhboard = () => {
-	return <div>
-		<Footer />
-		<Header />
-	</div>;
-};
-
-export default Dashhboard;
+export default function DashboardPage() {
+	return (
+		<div className={styles.main_dashboard}>
+			<div className={styles.main_center}>
+				{/* <Card /> // This is the Card component */}
+				<div className={styles.main_right}>
+					{/* <Quicklinks /> // This is the Quicklinks component or cards */}
+				</div>
+				<div className={styles.summary_of_accounts}>
+					{/* <AccountSummary /> // This is the AccountSummary component */}
+				</div>
+				<div className="topimage"></div>
+			</div>
+		</div>
+	);
+}
