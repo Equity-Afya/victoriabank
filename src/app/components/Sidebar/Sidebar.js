@@ -4,7 +4,6 @@ import styles from "./sidebar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { BiSolidDashboard } from "react-icons/bi";
 
 const Sidebar = () => {
   const [collapseSidebar, setCollapseSidebar] = useState(false);
@@ -26,9 +25,10 @@ const Sidebar = () => {
           <Image
             src="/assets/images/vlogo.svg"
             className={styles.vlogo}
-            width={30}
-            height={30}
+            width={20}
+            height={20}
           />
+          {/* <Image src="/assets/images/vb_logo.png" width={70} height={40} /> */}
         </div>
         <ul className={styles.nav_links}>
           <li>
