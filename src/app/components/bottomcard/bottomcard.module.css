@@ -1,7 +1,7 @@
 .card {
-  background-image: url('https://res.cloudinary.com/difjkimdu/image/upload/v1715773450/background-login-min_ixn7ri.jpg');
+  background-image: url("https://res.cloudinary.com/difjkimdu/image/upload/v1715773450/background-login-min_ixn7ri.jpg");
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   padding-left: 10px;
   padding-right: 8px;
@@ -18,12 +18,10 @@
   z-index: 999; /* Set a high z-index to ensure the card is above other elements */
 }
 
-
 .icons {
   display: flex;
   width: 300px;
-  padding-left:0px;
-  
+  padding-left: 0px;
 }
 
 .icons img {
