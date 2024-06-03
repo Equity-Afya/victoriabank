@@ -1,29 +1,21 @@
-.layout {
-	display: flex;
-	height: 100vh;
-	position: relative;
-}
-.layout_main {
-	flex-grow: 1;
-}
-
-.main_dashboard {
-	padding: 2rem;
+.container {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
-	gap: 2rem;
+	grid-template-columns: 0.2fr 3.8fr;
+	height: 100%;
+	gap: 15px;
 }
 
-.main_right {
+.main {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	gap: 1rem;
-	margin: 1rem 0rem;
+	grid-template-rows: 0.25fr 3.5fr 0.25fr;
 }
-<<<<<<< HEAD
-=======
 
-.main_center {
-
+.main_body {
+	display: grid;
+	grid-template-rows: 3.2fr 0.8fr;
 }
->>>>>>> 512ddd027974c68dda1f68eb1d0c8897cb683918
+.main_body_upper {
+	display: grid;
+	grid-template-columns: 0.8fr 3fr;
+	gap: 15px;
+}
