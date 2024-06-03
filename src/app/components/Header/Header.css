@@ -1,51 +1,48 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #080707;
-  padding: 15px 0px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #686363;
+	width: 100%;
+	color: #080707;
+	padding: 15px 0px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #686363;
 }
 .header-left {
-  padding-left: 100px;
+	padding-left: 100px;
 }
 .header-logo {
-  width: 100px;
+	width: 100px;
 }
 .header-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 .username {
-  font-weight: 700;
-  color: #01215b;
+	font-weight: 700;
+	color: #01215b;
 }
 .profile-image {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
 }
 @media screen and (max-width: 960px) {
-  .icon-container {
-    display: none;
-  }
-  .header-logo {
-    width: 100px;
-  }
-  .header-left {
-    padding-left: 50px;
-  }
-  .header-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding-right: 5px;
-  }
+	.icon-container {
+		display: none;
+	}
+	.header-logo {
+		width: 100px;
+	}
+	.header-left {
+		padding-left: 50px;
+	}
+	.header-right {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		padding-right: 5px;
+	}
 }
