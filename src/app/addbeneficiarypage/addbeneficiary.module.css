@@ -1,0 +1,81 @@
+.add{
+    display: grid;
+    grid-template-columns:0.1fr 3.9fr ;
+    padding-right: 10px;
+    background-color: #d9d9d9;
+}
+.sidebar{
+background-color:#d9d9d9 ;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-rows: 1.5fr 7fr 2.0fr; /* Smallest, Largest, Medium */
+  gap: 10px;
+   /* Adjust gap between columns */
+}
+.header{
+  display: grid;
+  grid-template-rows:3fr 1fr;
+}
+
+.maincontent {
+  display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;/* Example background color */
+  /* Additional styling for the sidebar */
+}
+
+.maincontent1{
+    background-color: blue;
+     border-radius: 10px;
+}
+.maincontent2{
+  display: grid;
+    grid-template-rows: 1fr 3fr;
+    gap: 10px;/* Example background color */
+  /* Additional styling for the sidebar */
+}
+.maincontent21{
+    border-radius: 10px;
+}
+.maincontent22{
+    
+    border-radius: 10px;
+}
+.bottomcard{
+   
+    border-radius: 0px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+.up{
+   background-color: #01215B;
+   border-radius: 10px;
+   margin-right: 10px;
+}
+.down{
+  background-color:#d9d9d9;
+}
+
+@media screen and (max-width: 960px) {
+  .maincontent {
+    grid-template-areas:
+        "header1"
+        "greetings"
+        "maincontent1"
+        "maincontent21"
+        "maincontent22"
+        "bottomcard";
+    grid-template-columns: 1fr;
+  }
+
+  /* Define styles for header1 and greetings */
+  .header1,
+  .greetings {
+    /* Add flexbox properties to display them in a column */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+  }
+}
