@@ -1,0 +1,19 @@
+.greetings {
+  display: flex;
+  flex-direction:row; /* Display children in a column layout */
+  width: 100%;
+  margin-left: 400px;
+  gap:300px;
+ 
+}
+
+.good {
+  color: #01215B;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .greetings {
+   flex-direction: column;
+  }
+}
