@@ -1,4 +1,6 @@
 .recent_transactions {
+  display: grid;
+  grid-template-rows: 0.25fr 3.75fr;
   width: 100%;
 }
 
