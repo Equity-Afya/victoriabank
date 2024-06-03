@@ -4,6 +4,8 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Footer from "../components/Footer/Footer";
 import RecentTransactions from "../components/RecentTransactions/RecentTransactions";
 import Accounts from "../components/Accounts/Accounts";
+import Bottomcard from "../components/bottomcard/bottomcard";
+import Services from "../components/services/Services";
 
 export default function DashboardLayout({ children }) {
 	return (
@@ -15,14 +17,14 @@ export default function DashboardLayout({ children }) {
 					<div className={styles.main_body_upper}>
 						<Accounts />
 						<div className={styles.main_body_upper_right}>
-							<RecentTransactions />
+							{children}
 						</div>
 					</div>
-					<div className={styles.mbl}></div>
+					<Bottomcard />
 				</div>
 				<Footer />
 			</div>
-			   
+
 		</div>
 	);
 }

@@ -5,9 +5,15 @@ const Accounts = () => {
 	return (
 		<div className="container">
 			<div className="item my-account-text">My Accounts</div>
+			<div>Select Account</div>
 			<div className="item select-account">
-				<span className="select-account-text">Select Account</span>
-				<img src="/assets/images/Icon-down.svg" alt="" />
+				<select className="select-account-text">
+					<option value="KES">Kenya Shillings</option>
+					<option value="USD"> US Dollar</option>
+					<option value="EUR">Euro</option>
+					<option value="GBP">British Pound</option>
+				</select>
+				{/* <img src="/assets/images/Icon-down.svg" alt="" /> */}
 			</div>
 			<div className="item atm-card">
 				<div className="atm-card-upper">

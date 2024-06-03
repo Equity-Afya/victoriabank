@@ -1,67 +1,66 @@
 .services {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    width: 100%;
-    padding-right: 10px;
-    
-    
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding-right: 10px;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffff;
-    padding: 45px ; 
-    text-align: center;
-    border-radius: 8px;
-    position: relative; 
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  /* padding: 45px; */
 }
 
 .box img {
-    position: absolute; 
-    top: 10px; 
-    max-width: 100%;
-   
+  position: absolute;
+  top: 10px;
+  max-width: 100%;
+  width: 20px;
+  margin-left: 20px;
 }
-    
+
 .box span {
-    font-size: 16px; 
-    position: absolute; 
-    bottom: 10px; 
-    left: 0; 
-    width: 100%; 
-    box-sizing: border-box;
-    color: #01215B; 
-    font-weight:600
+  font-size: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: #01215b;
+  font-weight: 600;
 }
 
 .box.active {
-    background-color: #01215B; 
+  background-color: #01215b;
 }
 
 .box.active span {
-    color: #fff; 
+  color: #fff;
 }
 
 .box:hover {
-    background-color: #01215B;
+  background-color: #01215b;
 }
 
 .box:hover span {
-    color: #fff; 
+  color: #fff;
 }
 
-
 @media screen and (max-width: 960px) {
-    .services {
-        grid-template-columns: repeat(2, 1fr); 
-    }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .box span {
-        font-size: 14px; 
-        bottom: 10px;
-    }
+  .box span {
+    font-size: 14px;
+    bottom: 10px;
+  }
 }
 /* Sidebar.module.css */
 

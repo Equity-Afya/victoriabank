@@ -1,19 +1,16 @@
-import styles from "./dashboard.module.css";
-import Accounts from "../components/Accounts/Accounts";
+import RecentTransactions from "../components/RecentTransactions/RecentTransactions";
+import Greetings from "../components/greetings/greetings";
 import Services from "../components/services/Services";
-export default function DashboardPage() {
+import styles from "./dashboard.module.css";
+
+
+const DashboardPage = () => {
 	return (
-		<div className={styles.main_dashboard}>
-			<div className={styles.main_center}>
-				<Accounts />
-				<div className={styles.main_right}>
-					<Services />
-				</div>
-				<div className={styles.summary_of_accounts}>
-					{/* <RecentTransactions /> */}
-				</div>
-				<div className="topimage"></div>
-			</div>
+		<div className={styles.dashboard}>
+			<Greetings />
+			<Services />
+			<RecentTransactions />
 		</div>
 	);
 }
+export default DashboardPage
