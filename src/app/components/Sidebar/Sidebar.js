@@ -46,7 +46,7 @@ const Sidebar = () => {
 							width={20}
 							height={20}
 						/>
-						<Link href="/dashboard">Task Lists</Link>
+						<Link href="/dashboard">Task List</Link>
 					</li>
 					<li>
 						<Image
