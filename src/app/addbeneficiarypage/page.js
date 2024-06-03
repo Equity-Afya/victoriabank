@@ -5,17 +5,22 @@ import Services from "../components/services/Services"
 import Sidebar from '../components/Sidebar/Sidebar';
 import Greetings from '../components/greetings/greetings';
 import Bottomcard from '../components/bottomcard/bottomcard';
+import Header from '../components/Header/Header';
+import Accounts from '../components/Accounts/Accounts';
+import Footer from '../components/Footer/Footer';
 function page() {
 
   return (
     <div  className={styles.add}>
         <div className={styles.sidebar}>
-            <Sidebar/>
+           <Sidebar/> 
         </div>
   <div class={styles.gridcontainer}>
   <div className={styles.header}>
     <div className={styles.header1}>
-     Header
+     <div>
+      header
+     </div>
     </div>
      <div className={styles.greetings}>
      <Greetings/>
@@ -23,7 +28,7 @@ function page() {
   </div>
   <div class={styles.maincontent}>
  <div  class={styles.maincontent1}>
-    My Account
+    Accounts
   </div>
   
   <div class={styles.maincontent2}>
@@ -40,15 +45,13 @@ function page() {
   <Bottomcard/>
     </div>
     <div className={styles.down}>
-      Footer
+      footer
     </div>
   </div>
  
 </div>
 
     </div>
-  
-
   )
 }
 
