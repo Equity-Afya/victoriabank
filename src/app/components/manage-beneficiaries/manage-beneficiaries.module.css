@@ -12,7 +12,6 @@
     margin:  auto;
     position: relative;
     margin-top: 30px;
-    padding: 0;
 }
 
 .header{
@@ -60,4 +59,17 @@
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+.searchBarContainer{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.count{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    
 }

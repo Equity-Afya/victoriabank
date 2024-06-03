@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react'
+import Manage from '../components/manage-beneficiaries/manage'
 
-const ManageBeneficiary = () => {
-	return <div></div>;
-};
+const page = () => {
+  return (
+	<div>
+	  <Manage/>
+	</div>
+  )
+}
 
-export default ManageBeneficiary;
+export default page
