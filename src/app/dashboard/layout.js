@@ -8,7 +8,26 @@ import Accounts from "../components/Accounts/Accounts";
 export default function DashboardLayout({ children }) {
   return (
     <div className={styles.container}>
-      <Header />
+      <Sidebar />
+      <div className={styles.main}>
+        <Header />
+        <div className={styles.main_body}>
+          <div className={styles.main_body_upper}>
+            <Accounts />
+            <div className={styles.main_body_upper_right}>
+              <RecentTransactions />
+            </div>
+          </div>
+          <div className={styles.mbl}></div>
+        </div>
+        <Footer />
+      </div>
+    </div>
+  );
+}
+
+{
+  /* <Header />
       <div className={styles.content}>
         <Sidebar />
         <div className={styles.content_right}>
@@ -19,7 +38,5 @@ export default function DashboardLayout({ children }) {
           <RecentTransactions />
         </div>
       </div>
-      <Footer />
-    </div>
-  );
+      <Footer /> */
 }

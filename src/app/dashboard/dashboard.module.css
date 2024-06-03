@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: grid;
   grid-template-rows: 0.25fr 2.5fr 0.25fr;
   width: 100%;
@@ -7,7 +7,7 @@
 
 .content {
   display: grid;
-  grid-template-columns: 0.5fr 3.5fr;
+  grid-template-columns: 0.2fr 3.75fr;
   width: 100%;
   gap: 20px;
 }
@@ -28,4 +28,27 @@
 
 .dashboard {
   width: 100%;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 0.2fr 3.8fr;
+  height: 100%;
+  gap: 15px;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 0.25fr 3.5fr 0.25fr;
+}
+
+.main_body {
+  display: grid;
+  grid-template-rows: 3.2fr 0.8fr;
+}
+
+.main_body_upper {
+  display: grid;
+  grid-template-columns: 0.8fr 3fr;
+  gap: 15px;
 }
