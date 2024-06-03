@@ -1,5 +1,5 @@
 import React from "react";
-
+import './login.css'
 const page = () => {
   return (
     <div>
@@ -46,7 +46,7 @@ const page = () => {
             </div>
             <div className="dont-have-an-ac">
               <a href="#register">
-                Don't have an account?
+                Do not have an account?
                 <span className="register">Register</span>
               </a>
             </div>
@@ -57,4 +57,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default page 
