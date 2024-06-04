@@ -2,11 +2,11 @@
 import React from 'react';
 import styles from "./services.module.css"; 
 
-function Services() {
+function Services({ onAddBeneficiaryClick,onBillpaymentClick }) {
   return (
     <div>
       <div className={styles.services}> 
-        <div className={styles.box}>
+        <div className={styles.box} onClick={onBillpaymentClick}>
           <img src="/assets/images/bill_payment.svg" alt="Bill Payment" className={styles.icon} /> 
           <span>Bill Payment</span> 
         </div>
@@ -23,7 +23,7 @@ function Services() {
           <img src="/assets/images/pesalink.svg" alt="PESALINK" className={styles.icon} />
           <span>PESALINK</span>
         </div>
-        <div className={styles.box}>
+        <div className={styles.box} onClick={onAddBeneficiaryClick}>
           <img src="/assets/images/beneficiary.svg" alt="Add Beneficiary" className={styles.icon} />
           <span>Add Beneficiary</span>
         </div>
