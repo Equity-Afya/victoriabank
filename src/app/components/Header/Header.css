@@ -9,7 +9,8 @@
   border-bottom: 1px solid #686363;
 }
 .header-left {
-  padding-left: 100px;
+  /* padding-left: 10px; */
+  padding-top: 10px;
 }
 .header-logo {
   width: 100px;

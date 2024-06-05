@@ -9,6 +9,7 @@
   display: grid;
   grid-template-rows: 0.25fr 3.5fr 0.25fr;
   gap: 10px;
+  overflow-y: scroll;
 }
 
 .main_body {
@@ -18,12 +19,13 @@
 }
 .main_body_upper {
   display: grid;
-  grid-template-columns: 0.8fr 3fr;
+  grid-template-columns: 0.8fr 2.8fr;
   gap: 15px;
 }
 .dashboard {
   display: grid;
   grid-template-rows: 0.7fr 0.5fr 3.3fr;
+  gap: 10px;
 }
 /* @media screen and (max-width: 960px) {
   .container {
