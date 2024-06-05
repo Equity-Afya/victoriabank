@@ -4,12 +4,9 @@
   height: 100%;
   gap: 15px;
 }
-
 .main {
   display: grid;
   grid-template-rows: 0.25fr 3.5fr 0.25fr;
-  overflow-y: scroll;
-
   overflow-y: scroll;
 }
 

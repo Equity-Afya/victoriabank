@@ -1,6 +1,5 @@
 import React from "react";
 import "./Accounts.css";
-import myaccounts from "../My-accounts/my-accounts";
 
 const Accounts = () => {
 	return (
