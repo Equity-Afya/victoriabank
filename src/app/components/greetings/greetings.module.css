@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row; /* Display children in a column layout */
   width: 100%;
-  gap: 300px;
+  gap: 500px;
   padding-top: 20px;
   padding-bottom: 0px;
 }

@@ -9,12 +9,15 @@ import Bottomcard from "../components/bottomcard/bottomcard";
 export default function DashboardLayout({ children }) {
 	return (
 		<div className={styles.container}>
-			<Sidebar />
+			<div className={styles.sidebar}>
+         <Sidebar />
+			</div>
+			
 			<div className={styles.main}>
 				<Header />
 				<div className={styles.main_body}>
 					<div className={styles.main_body_upper}>
-						<Accounts />
+					<Accounts />
 						<div className={styles.main_body_upper_right}>
 							{children}
 						</div>

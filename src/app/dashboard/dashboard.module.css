@@ -8,13 +8,15 @@
 .main {
   display: grid;
   grid-template-rows: 0.25fr 3.5fr 0.25fr;
+  overflow-y: scroll;
+  
 
 }
 
 .main_body {
   display: grid;
   grid-template-rows: 3.7fr 0.3fr;
-  gap: 10px;
+  gap: 40px;
 }
 .main_body_upper {
   display: grid;
@@ -24,4 +26,8 @@
 .dashboard {
   display: grid;
   grid-template-rows: 0.7fr 0.5fr 3.3fr;
+}
+
+.greetings{
+  margin-bottom: 20px;
 }

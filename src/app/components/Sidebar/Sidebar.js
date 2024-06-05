@@ -20,15 +20,17 @@ const Sidebar = () => {
 				<button className={styles.btn} onClick={handleCollapseSidebar}>
 					{collapseSidebar ? <MdKeyboardArrowRight /> : <MdKeyboardArrowLeft />}
 				</button>
-				<div className={styles.sidebar_top}>
-					<Image
-						src="/assets/images/vlogo.svg"
-						className={styles.vlogo}
-						width={20}
-						height={20}
-					/>
-					{/* <Image src="/assets/images/vb_logo.png" width={70} height={40} /> */}
-				</div>
+		  {collapseSidebar && (
+          <div className={styles.sidebar_top}>
+            <Image
+              src="/assets/images/vlogo.svg"
+              className={styles.vlogo}
+              width={20}
+              height={20}
+            />
+            {/* <Image src="/assets/images/vb_logo.png" width={70} height={40} /> */}
+          </div>
+        )}
 				<ul className={styles.nav_links}>
 					<li>
 						<Image

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Accounts.css";
+import myaccounts from "../My-accounts/my-accounts";
 
 const Accounts = () => {
 	return (
@@ -8,10 +9,10 @@ const Accounts = () => {
 			<div>Select Account</div>
 			<div className="item select-account">
 				<select className="select-account-text">
-					<option value="KES">Kenya Shillings</option>
-					<option value="USD"> US Dollar</option>
-					<option value="EUR">Euro</option>
-					<option value="GBP">British Pound</option>
+					<option value="KES">Business Account</option>
+					<option value="USD">Joint Account</option>
+					<option value="EUR">Savings Account</option>
+					<option value="GBP">Health Savings Account</option>
 				</select>
 				{/* <img src="/assets/images/Icon-down.svg" alt="" /> */}
 			</div>

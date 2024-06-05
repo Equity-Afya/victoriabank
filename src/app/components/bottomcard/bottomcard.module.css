@@ -2,9 +2,7 @@
   background-image: url("https://res.cloudinary.com/difjkimdu/image/upload/v1715773450/background-login-min_ixn7ri.jpg");
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  padding-left: 10px;
-  padding-right: 8px;
+  padding: 1rem;
   border-radius: 10px;
   height: 100%;
   display: flex;
@@ -27,4 +25,7 @@
 .icons img {
   width: 150px;
   padding: 2px;
+}
+.paragraph{
+    width: 50%;
 }
