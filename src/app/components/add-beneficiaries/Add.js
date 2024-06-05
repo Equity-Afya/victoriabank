@@ -53,8 +53,8 @@ function Add() {
           </select>
           <input type='text' placeholder='Re-enter Account Number' className={styles.inputField} />
          </div>
-         <div className={styles.button}>
-         <button >ADD BENEFICIARY +</button>
+         <div className={styles.button1}>
+         <button className={styles.button} >ADD BENEFICIARY +</button>
          </div>
          
           

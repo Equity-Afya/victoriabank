@@ -8,13 +8,13 @@
 .main {
   display: grid;
   grid-template-rows: 0.25fr 3.5fr 0.25fr;
-  gap: 10px;
+
 }
 
 .main_body {
   display: grid;
   grid-template-rows: 3.7fr 0.3fr;
-  gap: 30px;
+  gap: 10px;
 }
 .main_body_upper {
   display: grid;
