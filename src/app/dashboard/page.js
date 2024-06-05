@@ -15,7 +15,10 @@ const DashboardPage = () => {
 
     return (
         <div className={styles.dashboard}>
-            <Greetings />
+            <div className={styles.greetings}>
+           <Greetings />
+            </div>
+            
             <Services onAddBeneficiaryClick={toggleComponent} /> 
             {showAddBeneficiary ? ( 
                 <Add />
