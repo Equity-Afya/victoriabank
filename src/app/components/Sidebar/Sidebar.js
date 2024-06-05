@@ -18,7 +18,7 @@ const Sidebar = () => {
 					collapseSidebar ? styles.collapsed : ""
 				}`}>
 				<button className={styles.btn} onClick={handleCollapseSidebar}>
-					{collapseSidebar ? <MdKeyboardArrowRight /> : <MdKeyboardArrowLeft />}
+				{collapseSidebar ? <MdKeyboardArrowRight /> : <MdKeyboardArrowLeft />}
 				</button>
 		  {collapseSidebar && (
           <div className={styles.sidebar_top}>
@@ -122,15 +122,6 @@ const Sidebar = () => {
 							height={20}
 						/>
 						<Link href="/dashboard">Trade</Link>
-					</li>
-					<li>
-						<Image
-							src="/assets/images/logout.svg"
-							alt="logo"
-							width={20}
-							height={20}
-						/>
-						<Link href="/dashboard">Logout</Link>
 					</li>
 				</ul>
 			</aside>
