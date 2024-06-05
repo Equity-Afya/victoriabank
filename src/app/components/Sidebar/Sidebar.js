@@ -14,23 +14,22 @@ const Sidebar = () => {
 	return (
 		<div className={styles.sidebar_wrapper}>
 			<aside
-				className={`${styles.sidebar} ${
-					collapseSidebar ? styles.collapsed : ""
-				}`}>
+				className={`${styles.sidebar} ${collapseSidebar ? styles.collapsed : ""
+					}`}>
 				<button className={styles.btn} onClick={handleCollapseSidebar}>
 				{collapseSidebar ? <MdKeyboardArrowRight /> : <MdKeyboardArrowLeft />}
 				</button>
-		  {collapseSidebar && (
-          <div className={styles.sidebar_top}>
-            <Image
-              src="/assets/images/vlogo.svg"
-              className={styles.vlogo}
-              width={20}
-              height={20}
-            />
-            {/* <Image src="/assets/images/vb_logo.png" width={70} height={40} /> */}
-          </div>
-        )}
+				{collapseSidebar && (
+					<div className={styles.sidebar_top}>
+						<Image
+							src="/assets/images/vlogo.svg"
+							className={styles.vlogo}
+							width={20}
+							height={20}
+						/>
+						{/* <Image src="/assets/images/vb_logo.png" width={70} height={40} /> */}
+					</div>
+				)}
 				<ul className={styles.nav_links}>
 					<li>
 						<Image
@@ -77,7 +76,7 @@ const Sidebar = () => {
 						/>
 						<Link href="/dashboard">Payments</Link>
 					</li>
-					<li>
+					{<li>
 						<Image
 							src="/assets/images/mpesa.png"
 							alt="logo"
@@ -85,7 +84,7 @@ const Sidebar = () => {
 							height={20}
 						/>
 						<Link href="/services">MPESA</Link>
-					</li>
+					</li>}
 					<li>
 						<Image
 							src="/assets/images/services.svg"
@@ -104,7 +103,7 @@ const Sidebar = () => {
 						/>
 						<Link href="/services">Services</Link>
 					</li>
-					<li>
+					{<li>
 						<Image
 							src="/assets/images/setting-icon.svg"
 							alt="logo"
@@ -112,7 +111,7 @@ const Sidebar = () => {
 							height={20}
 						/>
 						<Link href="/services">Settings</Link>
-					</li>
+					</li>}
 
 					<li>
 						<Image
@@ -123,7 +122,18 @@ const Sidebar = () => {
 						/>
 						<Link href="/dashboard">Trade</Link>
 					</li>
+					<li>
+
+						<Image
+							src="/assets/images/logout.svg"
+							alt="logo"
+							width={20}
+							height={20}
+						/>
+						<Link href="/dashboard">Logout</Link>
+					</li>
 				</ul>
+
 			</aside>
 		</div>
 	);

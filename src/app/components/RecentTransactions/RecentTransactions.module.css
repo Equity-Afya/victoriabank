@@ -1,6 +1,6 @@
 .recent_transactions {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 .recents {
@@ -10,15 +10,18 @@
   align-items: center;
   margin-top: 1rem;
   color: #01215b;
+  font-size: 15px;
 }
 
 .recents h4 {
   color: #a38526;
-  font-weight: 400;
+  font-weight: 200;
   font-family: "Courier Prime", monospace;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
-
+.th {
+  font-size: 14px;
+}
 .latest {
   background-color: white;
   width: 100%;
@@ -41,6 +44,7 @@
   text-align: left;
   padding: 0.5rem 0rem;
   border-bottom: #a38526 0.005rem solid;
+  font-size: 12px;
 }
 
 .tr {
@@ -54,11 +58,12 @@
   gap: 5px;
   padding-top: 10px;
   align-items: center;
+  padding-right: 50px;
 }
 
 .view_all_text {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 10px;
   color: #01215b;
 }
 

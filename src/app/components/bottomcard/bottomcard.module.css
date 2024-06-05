@@ -3,6 +3,9 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   padding: 1rem;
+  font-size: 10px;
+  padding: 20px;
+  /* padding-right: 8px; */
   border-radius: 10px;
   height: 100%;
   display: flex;
@@ -20,12 +23,20 @@
   display: flex;
   width: 300px;
   padding-left: 0px;
+  gap: 5px;
 }
 
-.icons img {
-  width: 150px;
+/* .icons img {
+  width: 100px;
   padding: 2px;
+} */
+.playstore {
+  width: 100px;
+  border-radius: 10px;
 }
-.paragraph{
-    width: 50%;
+.appstore {
+  width: 90px;
+}
+.paragraph {
+  width: 50%;
 }
