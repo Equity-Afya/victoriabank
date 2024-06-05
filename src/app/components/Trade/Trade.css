@@ -1,0 +1,18 @@
+.tradelist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    padding-bottom: 5rem;
+
+}
+.trade{
+    margin-top: 33px;
+    font-weight: 600;
+    color:#01215b ;
+}

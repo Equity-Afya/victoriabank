@@ -1,16 +1,17 @@
 .container {
   display: grid;
   grid-template-rows: 40% 15% 0.2fr 0.2fr 0.2fr;
+  
 }
 
-.item {
+.item{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .atm-card {
   width: 100%;
-  height: 100%;
+  margin-top:5px;
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #01225d, #081732);
