@@ -2,14 +2,20 @@
   display: flex;
   flex-direction: row; /* Display children in a column layout */
   width: 100%;
-  gap: 500px;
+  gap: 300px;
   padding-top: 20px;
   padding-bottom: 0px;
+  justify-content: space-between;
 }
 
 .good {
   color: #01215b;
   font-weight: bold;
+}
+.login {
+  font-size: 11px;
+  padding-right: 1em;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 960px) {

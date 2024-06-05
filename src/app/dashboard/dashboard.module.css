@@ -9,25 +9,30 @@
   display: grid;
   grid-template-rows: 0.25fr 3.5fr 0.25fr;
   overflow-y: scroll;
-  
 
+  overflow-y: scroll;
 }
 
 .main_body {
   display: grid;
   grid-template-rows: 3.7fr 0.3fr;
-  gap: 40px;
+  gap: 30px;
 }
 .main_body_upper {
   display: grid;
-  grid-template-columns: 0.8fr 3fr;
+  grid-template-columns: 0.8fr 2.8fr;
   gap: 15px;
 }
 .dashboard {
   display: grid;
   grid-template-rows: 0.7fr 0.5fr 3.3fr;
+  gap: 10px;
 }
-
-.greetings{
-  margin-bottom: 20px;
-}
+/* @media screen and (max-width: 960px) {
+  .container {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+    height: 100%;
+    gap: 15px;
+  }
+} */
