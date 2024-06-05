@@ -8,7 +8,8 @@
 .main {
   display: grid;
   grid-template-rows: 0.25fr 3.5fr 0.25fr;
-  gap: 10px;
+  overflow-y: scroll;
+
   overflow-y: scroll;
 }
 

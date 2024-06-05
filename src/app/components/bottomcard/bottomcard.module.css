@@ -2,8 +2,9 @@
   background-image: url("https://res.cloudinary.com/difjkimdu/image/upload/v1715773450/background-login-min_ixn7ri.jpg");
   color: white;
   font-family: "Montserrat", sans-serif;
+  padding: 1rem;
   font-size: 10px;
-  padding: 30px;
+  padding: 20px;
   /* padding-right: 8px; */
   border-radius: 10px;
   height: 100%;
@@ -35,5 +36,7 @@
 }
 .appstore {
   width: 90px;
-  height: 50px;
+}
+.paragraph {
+  width: 50%;
 }

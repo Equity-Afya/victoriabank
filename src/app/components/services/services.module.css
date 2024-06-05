@@ -5,12 +5,12 @@
   width: 100%;
   padding-right: 10px;
 }
-
 .box {
   display: flex;
   flex-direction: column;
   background-color: #ffff;
-  padding: 30px;
+  padding: 35px;
+  height: 100%;
   text-align: center;
   border-radius: 8px;
   position: relative;
