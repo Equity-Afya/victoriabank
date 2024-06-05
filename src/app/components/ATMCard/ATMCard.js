@@ -1,20 +1,8 @@
-import React from "react";
-import "./Accounts.css";
-
-const Accounts = () => {
+import React from 'react'
+import "./ATMCard.css";
+const ATMCard = () => {
 	return (
-		<div className="container">
-			<div className="item my-account-text">My Accounts</div>
-			<div>Select Account</div>
-			<div className="item select-account">
-				<select className="select-account-text">
-					<option value="KES">Business Account</option>
-					<option value="USD">Joint Account</option>
-					<option value="EUR">Savings Account</option>
-					<option value="GBP">Health Savings Account</option>
-				</select>
-				{/* <img src="/assets/images/Icon-down.svg" alt="" /> */}
-			</div>
+		<div className='container'>
 			<div className="item atm-card">
 				<div className="atm-card-upper">
 					<img
@@ -74,4 +62,4 @@ const Accounts = () => {
 	);
 };
 
-export default Accounts;
+export default ATMCard

@@ -1,18 +1,18 @@
-.list{
+.bulkupload{
+    margin-top: 33px;
+    font-weight: 600;
+    color:#01215b ;
+
+}
+.uploads{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
     background-color: #ffffff;
-    margin-top: 10px;
+    margin-top: 4px;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 5px;
-    padding-bottom: 5rem;
-
-}
-.task{
-    margin-top: 33px;
-    font-weight: 600;
-    color:#01215b ;
+    padding-bottom: 1rem;
 }
