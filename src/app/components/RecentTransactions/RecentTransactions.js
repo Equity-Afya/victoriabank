@@ -40,19 +40,19 @@ const RecentTransactions = () => {
             <td className={styles.td}>10052024</td>
             <td className={styles.td}>MPESA to Account FREQY18764804Y3U</td>
             <td className={styles.td}>Completed</td>
-            <td className={styles.td}>10,000.00</td>
+            <td className={styles.td}>1,032,000.00</td>
           </tr>
           <tr>
             <td className={styles.td}>10052024</td>
             <td className={styles.td}>MPESA to Account FREQY18764804Y3U</td>
             <td className={styles.td}>Completed</td>
-            <td className={styles.td}>10,000.00</td>
+            <td className={styles.td}>30,000.00</td>
           </tr>
           <tr>
             <td className={styles.td}>10052024</td>
             <td className={styles.td}>MPESA to Account FREQY18764804Y3U</td>
             <td className={styles.td}>Completed</td>
-            <td className={styles.td}>10,000.00</td>
+            <td className={styles.td}>115000.00</td>
           </tr>
         </table>
         <div className={styles.view_all}>
