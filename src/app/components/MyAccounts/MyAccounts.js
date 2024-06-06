@@ -1,12 +1,12 @@
-import React from "react";
-import "./MyAccounts.css";
+import React from 'react'
+import "./MyAccounts.css"
 
 const MyAccounts = () => {
     return (
-        <div className="container">
-            <div className="item my-account-text">My Accounts</div>
+        <div className='my-account'>
+            <div className="my-account-text">My Accounts</div>
             <div>Select Account</div>
-            <div className="item select-account">
+            <div className="select-account">
                 <select className="select-account-text">
                     <option value="KES">Business Account</option>
                     <option value="USD">Joint Account</option>
@@ -18,4 +18,5 @@ const MyAccounts = () => {
         </div>
     )
 }
-export default MyAccounts;
+
+export default MyAccounts

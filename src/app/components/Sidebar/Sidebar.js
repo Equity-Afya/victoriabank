@@ -134,7 +134,6 @@ const Sidebar = () => {
 					</li>
 
 				</ul>
-
 			</aside>
 		</div>
 	);
