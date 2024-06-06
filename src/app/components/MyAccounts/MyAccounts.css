@@ -1,46 +1,46 @@
-.container {
+.my-account {
   display: grid;
   grid-template-rows: 0.2fr 0.2fr 0.2fr;
-  /* gap: 5px; */
+  gap: 9px;
+  width: 100%;
 }
 .item {
-  /* border: 1px solid #990a2e; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .select-account {
   display: flex;
   justify-content: space-between;
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: white;
+  border-radius: 5px;
   color: #01215b;
   border: none;
-  border-radius: 5px;
 }
 .select-account-text {
   border: none;
   border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 30px;
-  background-color: #ffffff;
-  background-image: url("/assets/images/Icon-down.svg");
-  background-position: right center;
-  background-repeat: no-repeat;
   font-weight: 500;
   font-size: 15px;
   width: 100%;
+  padding-left: 10px;
+  background-image: url("/assets/images/Icon-down.svg");
+  background-repeat: no-repeat;
+  background-position: right;
   appearance: none;
 }
 
 .my-account-text {
   padding-right: 100px;
+  color: #01215b;
   border: none;
   display: flex;
   font-weight: 800;
   font-size: 15px;
-  color: #01215b;
   /* padding-bottom: 3px; */
+  width: 100%;
 }
