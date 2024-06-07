@@ -5,8 +5,8 @@ function Transfers() {
   return (
     <div>
       <div className='transfers'>Transfers</div>
-   
-        <div className='list2'>
+  
+        <div className='lists'>
           <hr/>
             <ul> Add beneficiary </ul>
             <hr/>
