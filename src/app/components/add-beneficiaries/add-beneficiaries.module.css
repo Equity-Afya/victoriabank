@@ -3,7 +3,6 @@
   height: 100%;
   padding-right: 10px;
   padding-top: 15px;
-
 }
 
 .header {
@@ -14,28 +13,34 @@
 }
 
 .box {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   border-radius: 10px;
-  padding: 0px
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+.beneficiaries_select {
+  width: 100%;
+  padding: 3px;
 }
 
 .title1 {
-  color: #01215B;
+  color: #01215b;
   font-weight: bold;
   font-family: montserrat;
-  
 }
 .title2 {
-  color: #A38526;
+  color: #a38526;
   font-weight: bold;
   font-family: montserrat;
 }
 .buttonsContainer {
   display: flex;
-
 }
- .p {
+.p {
   text-transform: none;
   background-color: white;
   display: flex;
@@ -43,31 +48,29 @@
   width: 100%;
   gap: 10px;
   padding: 10px;
-  
-  
 }
 .p p {
-border: 1px solid #01215B;
-background-color: white;
-cursor: pointer;
-width: 100%;
-color: #A38526;
-padding: 0px;
-text-align: center;
-border-radius: 6px;
+  border: 1px solid #01215b;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  color: #a38526;
+  padding: 0px;
+  text-align: center;
+  border-radius: 6px;
 }
-.p p:hover{
-  background-color: #01215B;
-  color: #FFFFFF;
+.p p:hover {
+  background-color: #01215b;
+  color: #ffffff;
 }
-.bankdetails{
- color: #01215B;
- font-weight: 600;
- padding: 8px;
+.bankdetails {
+  color: #01215b;
+  font-weight: 600;
+  padding-top: 15px;
 }
 
 .form {
-  color: #01215B;
+  color: #01215b;
   font-weight: bold;
   font-family: montserrat;
   margin-bottom: 0px;
@@ -91,41 +94,34 @@ border-radius: 6px;
 
 .leftinput1 {
   display: flex;
-  flex-direction:row; 
+  flex-direction: row;
   gap: 20px;
-  padding: 10px;/* Change to column for small screens */
- 
+  padding: 10px; /* Change to column for small screens */
 }
 
 .leftinput2 {
   display: flex;
-  flex-direction:row;
-  gap: 20px; 
-  padding: 10px;/* Change to column for small screens */
- 
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px; /* Change to column for small screens */
 }
 
 .button {
   text-transform: none;
   width: 100%;
   padding: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 5px;
-  background-color: #01215B;
-  
+  background-color: #01215b;
 }
-.button:hover{
-  background-color: #A38526;
+.button:hover {
+  background-color: #a38526;
 }
 .button1 {
   text-transform: none;
   width: 100%;
   padding: 8px;
- 
-  
-  
 }
-
 
 @media screen and (max-width: 960px) {
   .leftinput1,
@@ -135,13 +131,13 @@ border-radius: 6px;
     padding: 20px;
   }
   .currencySelect {
-  background-color: whitesmoke;
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  border-radius: 5px;
-}
- .p{
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
