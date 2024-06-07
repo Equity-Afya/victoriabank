@@ -14,6 +14,7 @@ import Payments from '../components/Payments/Payments';
 import Bulkuploads from '../components/BulkUploads/Bulkuploads';
 import Services2 from '../components/Services2/Services2';
 import Trade from '../components/Trade/Trade';
+import CheckbookRequest from '../components/CheckbookRequest/CheckbookRequest';
 
 export default function DashboardLayout({ children }) {
 	const [showAccounts, setShowAccounts] = useState(true);
