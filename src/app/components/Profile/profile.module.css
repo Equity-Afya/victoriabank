@@ -1,0 +1,99 @@
+.profileContainer {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .username {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+  }
+  
+  .usernameInput {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+  }
+  
+  .profilePicWrapper {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin-right: 1rem;
+  }
+  
+  .profilePicContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profilePic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cameraButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cameraButton:hover {
+    background-color: #01215b;
+    transform: scale(1.1);
+  }
+  
+  .actionsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .actionButton {
+    display: flex;
+    align-items: center;
+    background-color: #a38526;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 1rem;
+  }
+  
+  .actionButton:hover {
+    background-color: #01215b;
+  }
+  
+  .actionButton svg {
+    margin-right: 0.5rem;
+  }
