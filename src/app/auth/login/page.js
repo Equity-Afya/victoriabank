@@ -72,9 +72,9 @@ const Login = () => {
                             <span className="need-help">Need Help?</span>
                         </Link>
                     </div>
-                    <Link href="#register">
+                    {/* <Link href="#register">
                         Don't have an account? <span className="register">Register</span>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
         </div>
