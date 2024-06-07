@@ -1,5 +1,7 @@
 import React from 'react'
 import './Header.css'
+import Settings
+ from '../settings/Settings'
 const Header = () => {
     return (
         <header className='header'>
@@ -11,7 +13,7 @@ const Header = () => {
                     <img src="/assets/images/message-icon.svg" />
                 </div>
                 <div className="icon-container">
-                    <img src="/assets/images/setting-icon.svg" />
+                    <Settings/>
                 </div>
                 <div className="icon-container">
                     <img src="/assets/images/notification-icon.svg" />

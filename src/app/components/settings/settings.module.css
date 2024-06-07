@@ -7,10 +7,8 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #f5f5f5;
     transition: background-color 0.3s ease;
   }
-  
   .sectionBarOpen {
     background-color: #a38526;
   }

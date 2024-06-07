@@ -17,16 +17,14 @@ const Settings = () => {
         className={`${styles.sectionBar} ${isOpen ? styles.sectionBarOpen : ''}`}
       >
         <div className={styles.settingsIcon} onClick={toggleDropdown}>
-          <span>⚙️</span> Settings
+        <img src='/assets/images/setting-icon.svg'/>
         </div>
         {isOpen && (
           <div className={styles.closeIcon} onClick={toggleDropdown}>
-            -
           </div>
         )}
         {!isOpen && (
           <div className={styles.toggleIcon} onClick={toggleDropdown}>
-            +
           </div>
         )}
         {isOpen && (
