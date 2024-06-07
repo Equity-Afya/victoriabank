@@ -1,20 +1,24 @@
 .container {
-  max-width: 600px;
-  margin: 0 auto;
   padding: 20px;
   /* border: 1px solid #ccc; */
-
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  /* margin: 10px; */
 }
 
 .checkbook_text {
-  justify-content: flex-start;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  padding: 20px;
   font-size: 20px;
-  color: #333;
+  /* color: #333; */
+  color: #01215b;
+  text-align: center;
 }
 
 .form {
@@ -28,19 +32,27 @@
 
 .formGroup label {
   display: block;
+  font-size: 15px;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
+  /* font-weight: bold; */
+  color: #01215b;
 }
 
-.formGroup input,
-.formGroup textarea {
+.formGroup input {
+  background-color: #e1e1e1;
+  /* text-align: center; */
+  border-radius: 5px;
   width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  /* width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 16px; */
 }
 
 .formGroup input:focus,
@@ -51,8 +63,8 @@
 
 .submitButton {
   padding: 10px 15px;
-  background-color: #0070f3;
-  color: white;
+  background-color: #01215b;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -61,7 +73,19 @@
   align-self: center;
   transition: background-color 0.3s;
 }
-
+/* button {
+  background-color: #01215b;
+  border: none;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+} */
 .submitButton:hover {
-  background-color: #005bb5;
+  /* background-color: #005bb5; */
+  background-color: #a38526;
+  animation-duration: 0.3s;
+  color: #01215b;
 }

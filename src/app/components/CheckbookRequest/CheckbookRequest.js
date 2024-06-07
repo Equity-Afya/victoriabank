@@ -1,17 +1,25 @@
-"use client";
 import React, { useState } from 'react';
 import styles from './CheckbookRequest.module.css'; // Import the CSS module
 
 const CheckbookRequest = () => {
     const [name, setName] = useState('');
     const [accountNumber, setAccountNumber] = useState('');
-    const [address, setAddress] = useState('');
-    const [quantity, setQuantity] = useState(1);
+    const [mobileNumber, setMobileNumber] = useState('');
+    const [quantity, setQuantity] = useState(25); // Default quantity set to 25
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic here
-        console.log({ name, accountNumber, address, quantity });
+        console.log({ name, accountNumber, mobileNumber, quantity });
+
+        // Show alert message
+        alert('Request submitted successfully');
+
+        // Clear input fields
+        setName('');
+        setAccountNumber('');
+        setMobileNumber('');
+        setQuantity(25); // Reset quantity to default
     };
 
     return (
@@ -39,24 +47,27 @@ const CheckbookRequest = () => {
                     />
                 </div>
                 <div className={styles.formGroup}>
-                    <label htmlFor="address">Address:</label>
+                    <label htmlFor="mobileNumber">Mobile Number:</label>
                     <input
-                        id="address"
-                        value={address}
-                        onChange={(e) => setAddress(e.target.value)}
-                        required
-                    ></input>
-                </div>
-                <div className={styles.formGroup}>
-                    <label htmlFor="quantity">Quantity:</label>
-                    <input
-                        type="number"
-                        id="quantity"
-                        value={quantity}
-                        onChange={(e) => setQuantity(e.target.value)}
-                        min="1"
+                        type='text'
+                        id="mobileNumber"
+                        value={mobileNumber}
+                        onChange={(e) => setMobileNumber(e.target.value)}
                         required
                     />
+                </div>
+                <div className={styles.formGroup}>
+                    <label htmlFor="quantity">Pages:</label>
+                    <select
+                        id="quantity"
+                        value={quantity}
+                        onChange={(e) => setQuantity(parseInt(e.target.value))}
+                        required
+                    >
+                        <option value={25}>25</option>
+                        <option value={50}>50</option>
+                        <option value={100}>100</option>
+                    </select>
                 </div>
                 <button type="submit" className={styles.submitButton}>Submit Request</button>
             </form>
