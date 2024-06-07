@@ -4,9 +4,14 @@ import './ATMCard.css';
 
 const ATMCard = () => {
 	const [isBalanceVisible, setIsBalanceVisible] = useState(false); // State to toggle balance visibility
+	const [isLoading, setIsLoading] = useState(false); // State to simulate loading
 
 	const toggleBalance = () => {
-		setIsBalanceVisible(!isBalanceVisible);
+		setIsLoading(true);
+		setTimeout(() => {
+			setIsBalanceVisible(!isBalanceVisible);
+			setIsLoading(false);
+		}, 1000); // Simulate a loading delay of 1 second
 	};
 
 	return (
@@ -34,20 +39,26 @@ const ATMCard = () => {
 				</span>
 				<div className="actual-balance">
 					<span className="actual-balance-figure">
-						{isBalanceVisible ? '$43,000.00' : '**********'}
+						{isLoading ? 'Loading...' : (isBalanceVisible ? '$43,000.00' : '**********')}
 					</span>
-					{isBalanceVisible ? (
-						<img
-							src="/assets/images/slashedmacho.svg"
-							alt="Hide Balance"
-							className="macho"
-						/>
+					{isLoading ? (
+						<div className="loader"></div> // Optional loading spinner
 					) : (
-						<img
-							src="/assets/images/macho.svg"
-							alt="Show Balance"
-							className="macho"
-						/>
+						<>
+							{isBalanceVisible ? (
+								<img
+									src="/assets/images/slashedmacho.svg"
+									alt="Hide Balance"
+									className="macho"
+								/>
+							) : (
+								<img
+									src="/assets/images/macho.svg"
+									alt="Show Balance"
+									className="macho"
+								/>
+							)}
+						</>
 					)}
 				</div>
 			</div>
@@ -66,7 +77,7 @@ const ATMCard = () => {
 					<span className="total-figure">65</span>
 				</div>
 			</div>
-			<div className=" item-pending-transaction">
+			<div className="item-pending-transaction">
 				<div className="pending-transaction">
 					<img
 						src="/assets/images/arrow-right-gold.svg"

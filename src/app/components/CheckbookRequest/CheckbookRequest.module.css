@@ -1,0 +1,67 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat";
+}
+
+.checkbook_text {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.submitButton {
+  padding: 10px 15px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  align-self: center;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}
