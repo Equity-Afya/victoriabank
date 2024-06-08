@@ -8,13 +8,16 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 5px;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
 }
 
 .pend {
+    text-align: center;
+    padding: 10px;
+    background-color: #01215b;
     margin-top: 33px;
     font-weight: 600;
-    color: #01215b;
+    color: #ffffff;
 }
 
 table {

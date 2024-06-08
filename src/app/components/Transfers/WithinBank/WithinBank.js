@@ -3,9 +3,9 @@ import styles from "./WithinBank.module.css";
 
 const WithinBank = () => {
   return (
-    <div>
-      <span className={styles.bankdetails}>Transfer Within Bank</span>
-      <div className={styles.form}>
+    <div >
+      <div  className={styles.form}>
+        <h2 className={styles.bankdetails}>Transfer Within Bank</h2>
         <div className={styles.inputFields}>
           <div className={styles.leftinput1}>
           <select className={styles.currencySelect}>
@@ -35,7 +35,7 @@ const WithinBank = () => {
           </div>
 
           <div className={styles.button1}>
-            <button className={styles.button}>Transfer +</button>
+            <button className={styles.button}>Transfer -</button>
           </div>
         </div>
       </div>

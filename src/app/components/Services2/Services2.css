@@ -1,21 +1,21 @@
 
 .services2{
-    margin-top: 33px;
+    margin-top: 20px;
     font-weight: 600;
     color:#01215b ;
 
 }
 .service{
-   
 
     display: flex;
     flex-direction: column;
     gap: 6px;
-    background-color: #ffffff;
-    margin-top: 4px;
+    color: #ffffff;
+    background-color: #a38526;
+    margin-top: 0px;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 5px;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }

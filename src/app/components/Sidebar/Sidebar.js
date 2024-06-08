@@ -3,66 +3,38 @@ import styles from "./sidebar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { useRouter } from 'next/navigation';
 
-const Sidebar = ({ setShowAccounts, setShowTasklist, setShowTransferslist, setShowPayments, setShowUploads, setShowServices, setShowTrade }) => {
+
+
+const Sidebar = () => {
+	const router = useRouter();
 	const [collapseSidebar, setCollapseSidebar] = React.useState(false);
 	const handleCollapseSidebar = () => {
 		setCollapseSidebar((prev) => !prev);
 	};
+	const handleDashboardClick  = () => {
+		router.push('/dashboard')
+	}
 	const handleTaskListClick = () => {
-		setShowAccounts(false); // Hide the ATMCard component
-		setShowTasklist(true); // Show the Tasklist component
-		setShowTransferslist(false);
-		setShowPayments(false) // Hide the Transfers component
-		setShowUploads(false)
-		setShowServices(false)
-		setShowTrade(false)
+		router.push('/Tasklist')
 	};
 
 	const handleTransfersClick = () => {
-		setShowAccounts(false); // Hide the ATMCard component
-		setShowTasklist(false); // Hide the Tasklist component
-		setShowTransferslist(true);
-		setShowPayments(false) // Show the Transfers component
-		setShowUploads(false)
-		setShowServices(false)
-		setShowTrade(false)
+		router.push('/Transfers')
+		
 	};
 	const handlePaymentsClick = () => {
-		setShowAccounts(false); // Hide the ATMCard component
-		setShowTasklist(false); // Hide the Tasklist component
-		setShowTransferslist(false);
-		setShowPayments(true)// Show the Transfers component
-		setShowUploads(false)
-		setShowServices(false)
-		setShowTrade(false)
+		router.push('/Payments')
 	};
 	const handleBulkuploadsClick = () => {
-		setShowAccounts(false); // Hide the ATMCard component
-		setShowTasklist(false); // Hide the Tasklist component
-		setShowTransferslist(false);
-		setShowPayments(false)// Show the Transfers component
-		setShowUploads(true)
-		setShowServices(false)
-		setShowTrade(false)
+		router.push('/BulkUploads')
 	};
 	const handleServicesClick = () => {
-		setShowAccounts(false); // Hide the ATMCard component
-		setShowTasklist(false); // Hide the Tasklist component
-		setShowTransferslist(false);
-		setShowPayments(false)// Show the Transfers component
-		setShowUploads(false)
-		setShowServices(true)
-		setShowTrade(false)
+		router.push('/Services2')
 	};
 	const handleTradeClick = () => {
-		setShowAccounts(false); // Hide the ATMCard component
-		setShowTasklist(false); // Show the Tasklist component
-		setShowTransferslist(false);
-		setShowPayments(false) // Hide the Transfers component
-		setShowUploads(false)
-		setShowServices(false)
-		setShowTrade(true)
+		router.push('/Trade')
 	};
 	return (
 		<div className={styles.sidebar_wrapper}>
@@ -86,12 +58,13 @@ const Sidebar = ({ setShowAccounts, setShowTasklist, setShowTransferslist, setSh
 					</div>
 				)}
 				<ul className={styles.nav_links}>
-					<li>
+					<li onClick={handleDashboardClick}>
 						<Image
 							src="/assets/images/dashboard_icon.svg"
 							alt="logo"
 							width={20}
 							height={20}
+							title="Dashboard"
 						/>
 						<Link href="/dashboard">Dashboard</Link>
 					</li>
@@ -101,6 +74,7 @@ const Sidebar = ({ setShowAccounts, setShowTasklist, setShowTransferslist, setSh
 							alt="logo"
 							width={20}
 							height={20}
+							title="Tasklists"
 						/>
 						<Link href="/dashboard">Task List</Link>
 					</li>
@@ -110,6 +84,7 @@ const Sidebar = ({ setShowAccounts, setShowTasklist, setShowTransferslist, setSh
 							alt="logo"
 							width={20}
 							height={20}
+							title="Transfers"
 						/>
 						<Link href="/dashboard">Transfers</Link>
 					</li>
@@ -119,6 +94,7 @@ const Sidebar = ({ setShowAccounts, setShowTasklist, setShowTransferslist, setSh
 							alt="logo"
 							width={20}
 							height={20}
+							title="Payments"
 						/>
 						<Link href="/dashboard">Payments</Link>
 					</li>
@@ -128,25 +104,28 @@ const Sidebar = ({ setShowAccounts, setShowTasklist, setShowTransferslist, setSh
 							alt="logo"
 							width={20}
 							height={20}
+							title="Bulk Uploads"
 						/>
 						<Link href="/dashboard">Bulk Upload</Link>
 					</li>
-					<li onClick={handleServicesClick}>
+					<li onClick={handleServicesClick} >
 						<Image
 							src="/assets/images/services.svg"
 							alt="logo"
 							width={20}
 							height={20}
+							title="Services"
 						/>
 						<Link href="/dashboard">Services</Link>
 					</li>
 
-					<li onClick={handleTradeClick}>
+					<li onClick={handleTradeClick} >
 						<Image
 							src="/assets/images/trade.svg"
 							alt="logo"
 							width={20}
 							height={20}
+							title="Trade"
 						/>
 						<Link href="/dashboard">Trade</Link>
 					</li>
@@ -155,5 +134,4 @@ const Sidebar = ({ setShowAccounts, setShowTasklist, setShowTransferslist, setSh
 		</div>
 	);
 };
-
 export default Sidebar;

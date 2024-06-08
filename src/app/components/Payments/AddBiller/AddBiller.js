@@ -3,8 +3,8 @@ import styles from "./AddBiller.module.css";
 
 const AddBiller = () => {
   return (
-    <div>
-      <span className={styles.bankdetails}>Add Biller</span>
+    <div  className={styles.form}>
+      <h2 className={styles.bankdetails}>Add Biller</h2>
       <div className={styles.form}>
         <div className={styles.inputFields}>
           <div className={styles.leftinput1}>
@@ -35,7 +35,7 @@ const AddBiller = () => {
           </div>
 
           <div className={styles.button1}>
-            <button className={styles.button}>Transfer </button>
+            <button className={styles.button}>Add </button>
           </div>
         </div>
       </div>

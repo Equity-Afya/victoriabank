@@ -4,7 +4,7 @@
   font-family: montserrat;
   margin-bottom: 0px;
   background-color: #ffffff;
-  padding-bottom: 8.5rem;
+  padding-bottom: 5.5rem;
   padding-top: 2rem;
   border-radius: 5px;
 }
@@ -61,8 +61,13 @@
 }
 
 .bankdetails {
-  color: #01215b;
-  font-weight: 600;
-margin-top: 30px;
+ text-align: center;
+ margin: 10px;
+ font-size: 18px;
+    padding: 10px;
+    background-color: #01215b;
+    margin-top: 33px;
+    font-weight: 600;
+    color: #ffffff;
 
 }
