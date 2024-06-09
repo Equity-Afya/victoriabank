@@ -22,7 +22,8 @@
 .currencySelect {
   background-color: whitesmoke;
   width: 100%;
-  text-align: center;
+  border: none;
+  text-align: left;
   border-radius: 5px;
   padding-right: 15px;
 }
@@ -44,6 +45,7 @@
 .button {
   text-transform: none;
   width: 100%;
+  font-weight: 600;
   padding: 8px;
   margin-top: 30px;
   color: #ffffff;

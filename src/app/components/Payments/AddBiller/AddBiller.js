@@ -35,7 +35,7 @@ const AddBiller = () => {
           </div>
 
           <div className={styles.button1}>
-            <button className={styles.button}>Add </button>
+            <button className={styles.button}>Add +</button>
           </div>
         </div>
       </div>
