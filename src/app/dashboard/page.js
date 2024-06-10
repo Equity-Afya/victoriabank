@@ -7,23 +7,23 @@ import styles from "./dashboard.module.css";
 import Add from '../components/add-beneficiaries/Add';
 
 const DashboardPage = () => {
-    const [showAddBeneficiary, setShowAddBeneficiary] = useState(false); 
+    const [showAddBeneficiary, setShowAddBeneficiary] = useState(false);
 
     const toggleComponent = () => {
-        setShowAddBeneficiary(!showAddBeneficiary); 
+        setShowAddBeneficiary(!showAddBeneficiary);
     };
 
     return (
         <div className={styles.dashboard}>
             <div className={styles.greetings}>
-           <Greetings />
+                <Greetings />
             </div>
-            
-            <Services onAddBeneficiaryClick={toggleComponent} /> 
-            {showAddBeneficiary ? ( 
+
+            <Services onAddBeneficiaryClick={toggleComponent} />
+            {showAddBeneficiary ? (
                 <Add />
             ) : (
-                <RecentTransactions /> 
+                <RecentTransactions />
             )}
         </div>
     );
