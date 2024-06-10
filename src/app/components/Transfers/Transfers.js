@@ -8,19 +8,19 @@ function Transfers() {
   
         <div className='lists'>
           <hr/>
-            <ul> Add beneficiary </ul>
+            <ul className='ul'> Add beneficiary  </ul>
             <hr/>
-            <ul> View Beneficiary</ul>
+            <ul className='ul'> View Beneficiary</ul>
             <hr/>
-            <ul> Within Bank</ul>
+            <ul className='ul'> Within Bank</ul>
             <hr/>
-            <ul> Own Accounts</ul>
+            <ul className='ul'> Own Accounts</ul>
             <hr/>
-            <ul> Rtgs/EFT/Pesalink</ul>
+            <ul className='ul'> Rtgs/EFT/Pesalink</ul>
             <hr/>
-            <ul> SWIFT-International</ul>
+            <ul className='ul'> SWIFT-International</ul>
              <hr/>
-            <ul> Transfer History</ul>
+            <ul className='ul'> Transfer History</ul>
             <hr/>
         </div>
     </div>
