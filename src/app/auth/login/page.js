@@ -76,9 +76,6 @@ const Login = () => {
                             <span className="need-help">Need Help?</span>
                         </Link>
                     </div>
-                    {/* <Link href="#register">
-                        Don't have an account? <span className="register">Register</span>
-                    </Link> */}
                 </div>
             </div>
         </div>
