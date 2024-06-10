@@ -6,9 +6,9 @@ function Bulkuploads() {
      <div className='bulkupload'>Bulk Upload</div>
         <div className='uploads'>
           <hr/>
-            <ul> EFT/MPESA/RTGS </ul>
+            <ul className='ul3'>EFT/MPESA/RTGS </ul>
             <hr/>
-            <ul> Uploads History </ul>
+            <ul className='ul3'> Uploads History </ul>
              <hr/>
         </div>
     </div>
