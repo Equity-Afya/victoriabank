@@ -40,7 +40,7 @@ function Add() {
         </div>
       </div>
       <div className={styles.box}>
-        <span className={module.select_beneficiary_text}>
+        <span className={styles.select_beneficiary_text}>
           Select Beneficiary Type
         </span>
         <select

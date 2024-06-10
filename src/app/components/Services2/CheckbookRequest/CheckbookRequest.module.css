@@ -1,23 +1,24 @@
 .container {
   padding: 20px;
-  /* border: 1px solid #ccc; */
+  /*s border: 1px solid #ccc; */
   border-radius: 8px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: "Montserrat";
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   /* margin: 10px; */
 }
 
 .checkbook_text {
   /* margin-bottom: 20px; */
-  padding: 20px;
+  padding: 5px;
   font-size: 20px;
+  background: #01215b;
   /* color: #333; */
-  color: #01215b;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -69,7 +70,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 0px;
   align-self: center;
   transition: background-color 0.3s;
 }

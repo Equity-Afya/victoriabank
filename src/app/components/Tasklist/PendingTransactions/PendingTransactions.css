@@ -1,0 +1,40 @@
+.pending {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    padding-bottom: 6rem;
+}
+
+.pend {
+    text-align: center;
+    padding: 10px;
+    background-color: #01215b;
+    margin-top: 33px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
