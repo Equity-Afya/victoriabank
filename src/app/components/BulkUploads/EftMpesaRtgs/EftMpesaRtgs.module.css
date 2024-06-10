@@ -1,0 +1,92 @@
+.uploads{
+  background-color: #ffffff;
+  padding: 0.8rem;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.EftMpesaRtgs{
+  background-color: #01215b;
+  color: #ffffff;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.form {
+  color: #01215b;
+  font-weight: bold;
+  font-family: montserrat;
+  margin-bottom: 0px;
+  background-color: #ffffff;
+  padding-bottom: 8.5rem;
+  padding-top: 2rem;
+  border-radius: 5px;
+}
+
+.currencySelect {
+  background-color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding:12px;
+  margin-bottom: 10px;
+}
+
+.button {
+  text-transform: none;
+  width: 100%;
+  padding:10px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #01215b;
+}
+.button:hover {
+  background-color: #a38526;
+}
+.button1 {
+  text-transform: none;
+  width: 100%;
+  padding: 8px;
+}
+
+.paymentdetails {
+   width: 100%;
+  font-weight: 600;
+   margin-top: 20px;
+   padding: 15px;
+   background-color:#e1e1e1;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+;
+
+}
+.select_option{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.select{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.upload_input{
+  margin-top: 16px;
+  
+}
+.download{
+  background-color: #e1e1e1;
+  width: 14%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  
+
+}
+.download1{
+  display: flex;
+  flex-direction: column;
+}
