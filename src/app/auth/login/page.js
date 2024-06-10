@@ -2,12 +2,15 @@
 import { useState } from "react";
 import axios from "axios";
 import Link from 'next/link'; // Import Link from Next.js
+import { useRouter } from 'next/navigation';
 import "./Login.css";
 
 const Login = () => {
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
+    const router = useRouter();
+
 
     const handleLogin = async (event) => {
         event.preventDefault();
@@ -16,7 +19,8 @@ const Login = () => {
             if (response.data.statuscode = 200) {
                 // Redirect to the dashboard page upon successful login
                 // Use Link component to navigate to dashboard
-                window.location.href = "/dashboard";
+                // window.location.href
+                router.push = "/dashboard";
             } else {
                 setError("Invalid credentials. Please try again.");
             }
