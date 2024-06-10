@@ -1,19 +1,27 @@
 .list{
     display: flex;
     flex-direction: column;
-    gap: 10px;
      color: #ffffff;
+     gap: 7px;
     background-color: #a38526;
     margin-top: 10px;
     padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     border-radius: 5px;
-    padding-bottom: 6rem;
+    padding-bottom: 5.6rem;
+    cursor: pointer;
 
+}
+.list :hover{
+    background-color: #01215b;
 }
 .task{
     margin-top: 33px;
     font-weight: 600;
     color:#01215b ;
+}
+.ul1{
+    padding: 0.2rem;
+
 }

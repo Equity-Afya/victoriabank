@@ -9,7 +9,6 @@
 
     display: flex;
     flex-direction: column;
-    gap: 6px;
     color: #ffffff;
     background-color: #a38526;
     margin-top: 4px;
@@ -18,4 +17,11 @@
     padding-right: 1rem;
     border-radius: 5px;
     padding-bottom: 1rem;
+    cursor: pointer;
+}
+.pay :hover{
+     background-color: #01215b;
+}
+.ul2{
+  padding: 0.38rem; 
 }
