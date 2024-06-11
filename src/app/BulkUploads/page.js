@@ -14,11 +14,11 @@ const TransfersPage = () => {
     const [showAddBeneficiary, setShowAddBeneficiary] = useState(false); 
 
     const toggleComponent = () => {
-        setShowAddBeneficiary(!showAddBeneficiary); 
+       setShowAddBeneficiary(!showAddBeneficiary); 
     };
     return (
         <div className={styles.dashboard}>
-            <EftMpesaRtgs/>
+           
         </div>
     );
 };
