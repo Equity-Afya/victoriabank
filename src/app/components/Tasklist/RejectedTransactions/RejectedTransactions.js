@@ -1,17 +1,17 @@
 import React from 'react';
-import './PendingTransactions.css';
+import './RejectedTransactions.css';
 
-const PendingTransactions = () => {
+const RejectedTransactions  = () => {
     const transactions = [
-        { date: '2024-06-04', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-05', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-06', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-07', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-07', amount: 'Ksh 20,000', status: 'Pending' }
+        { date: '2024-02-08', amount: 'Ksh 10,000', status: 'Failed' },
+        { date: '2024-03-20', amount: 'Ksh 20,000', status: 'Failed' },
+        { date: '2024-05-06', amount: 'Ksh 17,000', status: 'Failed' },
+        { date: '2024-05-26', amount: 'Ksh 110,000', status: 'Failed' },
+        { date: '2024-06-07', amount: 'Ksh 190,000', status: 'Failed' }
     ];
     return (
-        <div className="pending">
-            <h4 className="pend">Pending Transactions</h4>
+        <div className="rejected">
+            <h4 className="reject">Rejected Transactions </h4>
             <table>
                <thead>
                     <tr> <th>Date</th>
@@ -33,4 +33,4 @@ const PendingTransactions = () => {
     );
 };
 
-export default PendingTransactions;
+export default RejectedTransactions ;
