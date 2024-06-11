@@ -26,9 +26,13 @@
 	background-color: #01215b;
 	color: white;
 	border-radius: 50%;
+	border: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-weight: 700;
 }
 
 .btn svg {

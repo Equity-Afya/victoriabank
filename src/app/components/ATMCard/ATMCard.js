@@ -82,7 +82,7 @@ const ATMCard = () => {
 				</div>
 				<div className="total">
 					<span className="total-text">TOTAL</span>
-					<span className="total-figure">2</span>
+					<span className="total-figure">65</span>
 				</div>
 			</div>
 			<div className="item-pending-transaction">
@@ -96,7 +96,7 @@ const ATMCard = () => {
 				</div>
 				<div className="total">
 					<span className="total-text">TOTAL</span>
-					<span className="total-figure-transaction">1</span>
+					<span className="total-figure-transaction">87</span>
 				</div>
 			</div>
 		</div>
