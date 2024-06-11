@@ -1,18 +1,28 @@
-.lists{
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-    color: #ffffff;
-    background-color: #a38526;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 5px;
-    padding-bottom: 0.5rem;
-
+.lists {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  color: #ffffff;
+  background-color: #a38526;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
 }
-.transfers{
-    margin-top: 23px;
-    font-weight: 600;
-    color:#01215b ;
+.lists :hover {
+  background-color: #01215b;
+}
+.transfers {
+  margin-top: 23px;
+  font-weight: 600;
+  color: #01215b;
+}
+
+ul {
+  cursor: pointer;
+}
+.ul {
+  padding: 0.55rem;
 }

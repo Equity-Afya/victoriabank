@@ -12,21 +12,21 @@ function Services2() {
       <div className='services2'>Services</div>
       <div className='service'>
         <hr />
-        <ul onClick={() => setClickedServiceOption("CheckbookRequest")}> Cheque book Request </ul>
+        <ul onClick={() => setClickedServiceOption("CheckbookRequest")} className='ul4'>Cheque book Request </ul>
         <hr />
-        <ul onClick={() => setClickedServiceOption("CheckStatusEnquiry")}> Cheque Status Enquiry </ul>
+        <ul onClick={() => setClickedServiceOption("CheckStatusEnquiry")} className='ul4'> Cheque Status Enquiry </ul>
         <hr />
-        <ul onClick={() => setClickedServiceOption("BankersChequeRequest")}> Banker's Cheque Request</ul>
+        <ul onClick={() => setClickedServiceOption("BankersChequeRequest")} className='ul4'> Banker's Cheque Request</ul>
         <hr />
-        <ul onClick={() => setClickedServiceOption("StopPayment")}> Stop Payment </ul>
+        <ul onClick={() => setClickedServiceOption("StopPayment")} className='ul4'> Stop Payment </ul>
         <hr />
-        <ul onClick={() => setClickedServiceOption("ViewChequeRequest")}> View Cheque Request</ul>
+        <ul onClick={() => setClickedServiceOption("ViewChequeRequest")} className='ul4'> View Cheque Request</ul>
         <hr />
-        <ul onClick={() => setClickedServiceOption("KRAReceipt")}>KRA receipt</ul>
+        <ul onClick={() => setClickedServiceOption("KRAReceipt")} className='ul4'>KRA receipt</ul>
         <hr />
-        <ul onClick={() => setClickedServiceOption("CustomerInstructions")}> Customer Instructions</ul>
+        <ul onClick={() => setClickedServiceOption("CustomerInstructions")} className='ul4'> Customer Instructions</ul>
         <hr />
-        <ul onClick={() => setClickedServiceOption("CreditCardPayment")}>Credit Card Payment</ul>
+        <ul onClick={() => setClickedServiceOption("CreditCardPayment")} className='ul4'>Credit Card Payment</ul>
         <hr />
       </div>
     </div>

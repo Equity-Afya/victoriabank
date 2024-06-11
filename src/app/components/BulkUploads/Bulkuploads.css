@@ -7,7 +7,6 @@
 .uploads{
     display: flex;
     flex-direction: column;
-    gap: 6px;
     color: #ffffff;
     background-color: #a38526;
     margin-top: 4px;
@@ -15,5 +14,12 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 5px;
-    padding-bottom: 13rem;
+    padding-bottom: 12rem;
+    cursor: pointer;
+}
+.uploads :hover{
+    background-color: #01215b;
+}
+.ul3{
+    padding: 0.5rem;
 }

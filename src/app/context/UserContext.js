@@ -9,6 +9,13 @@ import ViewChequeRequest from "../components/Services2/ViewCheckRequest/ViewChec
 import KRAReceipt from "../components/Services2/KRAReceipt/KRAReceipt";
 import CustomerInstructions from "../components/Services2/CustomerInstructions/CustomerInstructions";
 import CreditCardPayment from "../components/Services2/CreditCardPayment/CreditCardPayment";
+import WithinBank from "../components/Transfers/WithinBank/WithinBank";
+import Rtgs from "../components/Transfers/Rtgs/Rtgs";
+import OwnAccount from "../components/Transfers/OwnAccount/OwnAccount";
+import Swift from "../components/Transfers/Swift/Swift";
+import ViewBeneficiaries from "../components/Transfers/ViewBeneficiaries/ViewBeneficiaries";
+import Add from "../components/add-beneficiaries/Add";
+import RecentTransactions from "../components/RecentTransactions/RecentTransactions";
 
 export const UserContext = createContext();
 
@@ -42,6 +49,29 @@ export const UserProvider = ({ children }) => {
         return null;
     }
   }
+  const [clickedTransferOption, setClickedTransferOption] =
+    useState("Within Bank");
+
+  const renderTransferComponent = () => {
+    switch (clickedTransferOption) {
+      case "Add":
+        return <Add />;
+      case "View":
+        return <ViewBeneficiaries />;
+      case "Within Bank":
+        return <WithinBank />;
+      case "Own Accounts":
+        return <OwnAccount />;
+      case "Rtgs/EFT/Pesalink":
+        return <Rtgs />;
+      case "SWIFT-International":
+        return <Swift />;
+      case "Transfer History":
+        return <RecentTransactions />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <UserContext.Provider
@@ -57,6 +87,9 @@ export const UserProvider = ({ children }) => {
         clickedServiceOption,
         setClickedServiceOption,
         renderServiceComponent,
+        clickedTransferOption,
+        setClickedTransferOption,
+        renderTransferComponent,
       }}
     >
       {children}
