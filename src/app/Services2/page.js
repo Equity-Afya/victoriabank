@@ -1,25 +1,24 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import RecentTransactions from "../components/RecentTransactions/RecentTransactions";
 import Greetings from "../components/greetings/greetings";
 import Services from "../components/services/Services";
-import styles from "./services2.module.css"
+import styles from "./services2.module.css";
 import Add from '../components/add-beneficiaries/Add';
-import PendingTransactions from '../components/Tasklist/PendingTransactions/PendingTransactions';
-import CheckbookRequest from '../components/Services2/CheckbookRequest/CheckbookRequest';
-
+import { UserContext } from '../context/UserContext';
 const TasklistPage = () => {
-    const [showAddBeneficiary, setShowAddBeneficiary] = useState(false); 
-
+    const [showAddBeneficiary, setShowAddBeneficiary] = useState(false);
+    const { renderServiceComponent } = useContext(UserContext);
     const toggleComponent = () => {
-        setShowAddBeneficiary(!showAddBeneficiary); 
+        setShowAddBeneficiary(!showAddBeneficiary);
     };
 
     return (
         <div className={styles.dashboard}>
-            <CheckbookRequest/>
+            {renderServiceComponent()}
         </div>
     );
 };
 
 export default TasklistPage;
+
