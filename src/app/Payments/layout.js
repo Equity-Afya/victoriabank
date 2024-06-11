@@ -14,6 +14,9 @@ import AddBiller from "../components/Payments/AddBiller/AddBiller";
 import Payments from "../components/Payments/Payments";
 import ViewBiller from "../components/Payments/ViewBiller/ViewBiller";
 import ViewPayBiller from "../components/Payments/ViewPayBiller/ViewPayBiller";
+import Itax from "../components/Payments/Itax/Itax";
+import PaymentHistory from "../components/Payments/PaymentHistory/PaymentHistory";
+import PayBiller from "../components/Payments/PayBiller/PayBiller";
 // ... (other sub-components)
 
 export default function PaymentsLayout({ children }) {
@@ -22,9 +25,11 @@ export default function PaymentsLayout({ children }) {
   // Define handlers for each payment option (if using sub-components)
   const handleAddBillerClick = () => setView("Add Biller");
   const handleViewBillerClick = () => setView("View Biller");
-  const handlePayBillerClick = () => setView("View Pay Biller");
+  const handleViewPayBillerClick = () => setView("View Pay Biller");
+  const handlePayBillerClick = () => setView("Pay Biller");
+  const handleItaxClick = () => setView("Itax");
+   const handlePaymentHistoryClick = () => setView("Payment History");
   // ... (handlers for other payment options)
-
   // Determine which component to render based on the view state
   let PaymentComponent;
   switch (view) {
@@ -36,6 +41,16 @@ export default function PaymentsLayout({ children }) {
       break;
 	  case "View Pay Biller":
       PaymentComponent = ViewPayBiller; // Replace with appropriate component
+      break;
+       case "Pay Biller":
+      PaymentComponent = PayBiller; // Replace with appropriate component
+      break;
+
+     case "Itax":
+      PaymentComponent = Itax; // Replace with appropriate component
+      break;
+      case "Payment History":
+      PaymentComponent = PaymentHistory; // Replace with appropriate component
       break;
     // ... (cases for other payment options)
     default:
@@ -60,7 +75,10 @@ export default function PaymentsLayout({ children }) {
                 <Payments // Replace with Payments component
                   onAddBillerClick={handleAddBillerClick} // Update prop names if needed
                   onViewBillerClick={handleViewBillerClick}
-				   onPayBillerClick={handlePayBillerClick}
+				          onViewPayBillerClick={handleViewPayBillerClick}
+                   onPayBillerClick={handlePayBillerClick}
+                  onItaxClick={handleItaxClick}
+                  onPaymentHistoryClick={handlePaymentHistoryClick}
 
                   // ... (props for other payment options)
                 />
