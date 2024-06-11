@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import axios from "axios";
 import "./MyAccounts.css";
 import { UserContext } from "@/app/context/UserContext";
+import accounts from "../../models/accountsjson/accounts.json";
 
 const MyAccounts = () => {
   const {
@@ -14,20 +15,22 @@ const MyAccounts = () => {
 
   useEffect(() => {
     const fetchAccounts = async () => {
-      try {
-        const response = await axios.get(
-          `http://192.168.223.198:9010/api/v1/account/getAccountsByCustomer?cif=${userData.entity.cif}`
-        );
+      // try {
+      //   const response = await axios.get(
+      //     `http://192.168.223.198:9010/api/v1/account/getAccountsByCustomer?cif=${userData.entity.cif}`
+      //   );
 
-        console.log(response.data);
-        setUserAccounts(response.data);
-      } catch (error) {
-        console.error("Error fetching accounts:", error);
-      }
+      //   console.log(response.data);
+      //   //setUserAccounts(response.data);
+      //   setUserAccounts(accounts);
+      // } catch (error) {
+      //   console.error("Error fetching accounts:", error);
+      // }
+      setUserAccounts(accounts);
     };
 
     fetchAccounts();
-  }, [userData, setUserAccounts]);
+  }, []);
 
   const onSelectAccount = (e) => {
     const selectedAccountIndex = e.target.value;

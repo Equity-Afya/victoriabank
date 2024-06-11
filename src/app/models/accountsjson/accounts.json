@@ -1,0 +1,50 @@
+{
+  "message": "Accounts retrieved successfully",
+  "statusCode": 200,
+  "entity": [
+    {
+      "id": 1,
+      "accountName": "Josphat Eyanae",
+      "accountNumber": "0031004979573",
+      "accountCode": "100",
+      "accountType": "Personal",
+      "branchCode": "003",
+      "balance": 129500,
+      "currency": "KES",
+      "mandate": "self"
+    },
+    {
+      "id": 2,
+      "accountName": "Josphat Eyanae",
+      "accountNumber": "0032011600412",
+      "accountCode": "201",
+      "accountType": "Current",
+      "branchCode": "003",
+      "balance": 233816.045,
+      "currency": "KES",
+      "mandate": "self"
+    },
+    {
+      "id": 3,
+      "accountName": "Josphat Eyanae",
+      "accountNumber": "0032010107140",
+      "accountCode": "201",
+      "accountType": "Personal",
+      "branchCode": "003",
+      "balance": 9999.955,
+      "currency": "USD",
+      "mandate": "self"
+    },
+    {
+      "id": 4,
+      "accountName": "Josphat Eyanae",
+      "accountNumber": "0031003640568",
+      "accountCode": "100",
+      "accountType": "Personal",
+      "branchCode": "003",
+      "balance": 20000,
+      "currency": "KES",
+      "mandate": "self"
+    }
+  ]
+}
