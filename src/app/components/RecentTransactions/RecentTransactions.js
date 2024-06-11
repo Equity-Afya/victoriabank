@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import styles from "./RecentTransactions.module.css";
+import { UserContext } from "@/app/context/UserContext";
 
 const RecentTransactions = () => {
+  const { setTransactions, selectedAccount, transactions } = useContext(UserContext);
+
+  useEffect(() => {
+    const fetchAccounts = async () => {
+      try {
+        const response = await axios.get(
+          `http://192.168.223.198:9010/api/v1/account/getLastFiveTransactionsByAccountNumber?accountNumber=${selectedAccount?.accountNumber}`
+        );
+        console.log(response.data);
+        setTransactions(response.data);
+      } catch (error) {
+        console.error("Error fetching accounts:", error);
+      }
+    };
+
+    fetchAccounts();
+  }, [selectedAccount, setTransactions]);
+
   return (
     <div className={styles.recent_transactions}>
       <div className={styles.recents}>
         <h3>Recent Transactions </h3>
-        <h4>0010 0048 3290</h4>
+        <h4>{selectedAccount?.accountNumber}</h4>
       </div>
       <div className={styles.latest}>
         <table className={styles.table}>
@@ -19,7 +38,7 @@ const RecentTransactions = () => {
                 <h4>Description</h4>
               </th>
               <th className={styles.th}>
-                <h4>Status</h4>
+                <h4>Transaction Type</h4>
               </th>
               <th className={styles.th}>
                 <h4>Amount</h4>
@@ -27,12 +46,16 @@ const RecentTransactions = () => {
             </tr>
           </thead>
           <tbody>
+            {/* {
+              transactions.map
+            } */}
             <tr>
               <td className={styles.td}>10052024</td>
               <td className={styles.td}>MPESA to Account FREQY18764804Y3U</td>
               <td className={styles.td}>Completed</td>
               <td className={styles.td}>10,000.00</td>
-            </tr><tr>
+            </tr>
+            <tr>
               <td className={styles.td}>10052024</td>
               <td className={styles.td}>MPESA to Account FREQY18764804Y3U</td>
               <td className={styles.td}>Completed</td>

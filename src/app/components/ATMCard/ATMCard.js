@@ -8,6 +8,15 @@ const ATMCard = () => {
   const [isLoading, setIsLoading] = useState(false); // State to simulate loading
   const { selectedAccount } = useContext(UserContext);
 
+  const defaultAccount = {
+    accountName: "Account Name",
+    accountNumber: "0000000000",
+    currency: "KES",
+    balance: "0.00",
+  };
+
+  const account = selectedAccount || defaultAccount;
+
   const toggleBalance = () => {
     setIsLoading(true);
     setTimeout(() => {
@@ -30,9 +39,7 @@ const ATMCard = () => {
         <div className="atm-card-lower">
           <div className="card-details">
             <span className="account-name">{selectedAccount?.accountName}</span>
-            <span className="account-number">
-              {selectedAccount?.accountNumber}
-            </span>
+            <span className="account-number">{selectedAccount?.accountNumber}</span>
           </div>
           <div className="currency">{selectedAccount?.currency}</div>
         </div>
@@ -46,8 +53,8 @@ const ATMCard = () => {
             {isLoading
               ? "Loading..."
               : isBalanceVisible
-              ? `${selectedAccount?.balance}`
-              : "**********"}
+                ? `${selectedAccount.balance}`
+                : "**********"}
           </span>
           {isLoading ? (
             <div className="loader"></div> // Optional loading spinner
@@ -71,7 +78,7 @@ const ATMCard = () => {
         </div>
       </div>
       <div className="current-accounts-text">Current Accounts</div>
-      <div className=" item-pending-tasks">
+      <div className="item-pending-tasks">
         <div className="pending-tasks">
           <img
             src="/assets/images/arrow-right.svg"
