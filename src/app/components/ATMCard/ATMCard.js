@@ -16,7 +16,6 @@ const ATMCard = () => {
   };
 
   const account = selectedAccount || defaultAccount;
-
   const toggleBalance = () => {
     setIsLoading(true);
     setTimeout(() => {
