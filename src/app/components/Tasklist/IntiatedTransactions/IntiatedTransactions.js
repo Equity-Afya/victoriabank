@@ -1,17 +1,17 @@
 import React from 'react';
-import './PendingTransactions.css';
+import './IntiatedTransactions.css';
 
-const PendingTransactions = () => {
+const IntiatedTransactions = () => {
     const transactions = [
-        { date: '2024-06-04', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-05', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-06', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-07', amount: 'Ksh 20,000', status: 'Pending' },
-        { date: '2024-06-07', amount: 'Ksh 20,000', status: 'Pending' }
+        { date: '2024-06-05', amount: 'ksh.40,000', status: 'Succes' },
+        { date: '2024-06-05', amount: 'ksh.48,000', status: 'Succes' },
+        { date: '2024-06-06', amount: 'ksh.53,000', status: 'Succes' },
+        { date: '2024-06-07', amount: 'ksh.30,000', status: 'Succes' },
+        { date: '2024-06-07', amount: 'ksh.49,000', status: 'Succes' }
     ];
     return (
-        <div className="pending">
-            <h4 className="pend">Pending Transactions</h4>
+        <div className="int">
+            <h4 className="intiated">Initiated Transactions</h4>
             <table>
                <thead>
                     <tr> <th>Date</th>
@@ -33,4 +33,4 @@ const PendingTransactions = () => {
     );
 };
 
-export default PendingTransactions;
+export default IntiatedTransactions;
