@@ -6,7 +6,7 @@ import { UserContext } from "@/app/context/UserContext";
 const ATMCard = () => {
   const [isBalanceVisible, setIsBalanceVisible] = useState(false); // State to toggle balance visibility
   const [isLoading, setIsLoading] = useState(false); // State to simulate loading
-  const { selectedAccount } = useContext(UserContext);
+  const { selectedAccount, userAccounts } = useContext(UserContext);
 
   const defaultAccount = {
     accountName: "Account Name",
@@ -39,7 +39,9 @@ const ATMCard = () => {
         <div className="atm-card-lower">
           <div className="card-details">
             <span className="account-name">{selectedAccount?.accountName}</span>
-            <span className="account-number">{selectedAccount?.accountNumber}</span>
+            <span className="account-number">
+              {selectedAccount?.accountNumber}
+            </span>
           </div>
           <div className="currency">{selectedAccount?.currency}</div>
         </div>
@@ -53,8 +55,8 @@ const ATMCard = () => {
             {isLoading
               ? "Loading..."
               : isBalanceVisible
-                ? `${selectedAccount.balance}`
-                : "**********"}
+              ? `${selectedAccount.balance}`
+              : "**********"}
           </span>
           {isLoading ? (
             <div className="loader"></div> // Optional loading spinner

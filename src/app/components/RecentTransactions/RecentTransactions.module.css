@@ -65,8 +65,17 @@
   font-weight: 700;
   font-size: 10px;
   color: #01215b;
+  cursor: pointer;
 }
 
 .va_arrow_right_gold {
   width: 16px;
+}
+
+.debit {
+  color: red;
+}
+
+.credit {
+  color: rgb(27, 99, 50);
 }

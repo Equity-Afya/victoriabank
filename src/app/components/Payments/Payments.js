@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Payments.css";
 
-function Payments({ onAddBillerClick, onViewBillerClick, onPayBillerClick, onItaxClick, onMpesaClick, onAirtimeTopupClick, onPaymentHistoryClick }) {
+function Payments({ onAddBillerClick, onViewBillerClick,onPayBillerClick, onViewPayBillerClick, onItaxClick, onMpesaClick, onAirtimeTopupClick, onPaymentHistoryClick }) {
   return (
     <div>
       <div className='payments'>Payments</div>
@@ -11,13 +11,9 @@ function Payments({ onAddBillerClick, onViewBillerClick, onPayBillerClick, onIta
         <hr />
         <ul className='ul2' onClick={onViewBillerClick}>View Biller</ul>
         <hr />
-        <ul className='ul2' onClick={onPayBillerClick}>View & Pay Biller</ul>
+        <ul className='ul2' onClick={onViewPayBillerClick}>View & Pay Biller</ul>
         <hr />
         <ul className='ul2' onClick={onItaxClick}>Itax</ul>
-        <hr />
-        <ul className='ul2' onClick={onMpesaClick}>Mpesa</ul>
-        <hr />
-        <ul className='ul2' onClick={onAirtimeTopupClick}>AirTime Top up</ul>
         <hr />
         <ul className='ul2' onClick={onPaymentHistoryClick}>Payment History</ul>
         <hr />

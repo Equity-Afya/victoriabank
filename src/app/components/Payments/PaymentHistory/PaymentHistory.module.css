@@ -1,0 +1,43 @@
+.form1{
+  margin-top: 3.5rem;
+  border-radius:20px;
+  padding-bottom: 2rem;
+}
+.tableContainer {
+  
+  background-color: #ffffff;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.billerTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.billerTable th, .billerTable td {
+  padding: 10px;
+  padding-bottom: 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.actionButton {
+  background-color: transparent;
+  border: none;
+  color: #01215b;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.actionButton:hover {
+  text-decoration: underline;
+}
+.bankdetails{
+  background-color: #01215b;
+  color: #ffffff;
+  padding:5px;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+}

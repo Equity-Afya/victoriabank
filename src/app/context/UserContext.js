@@ -22,7 +22,17 @@ export const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const [userData, setUserData] = useState(null);
   const [userAccounts, setUserAccounts] = useState(null);
-  const [selectedAccount, setSelectedAccount] = useState(null);
+  const [selectedAccount, setSelectedAccount] = useState({
+    id: 1,
+    accountName: "Josphat Eyanae",
+    accountNumber: "0031004979573",
+    accountCode: "100",
+    accountType: "Personal",
+    branchCode: "003",
+    balance: 129500,
+    currency: "KES",
+    mandate: "self",
+  });
   const [transactions, setTransactions] = useState(null);
   const [clickedServiceOption, setClickedServiceOption] =
     useState("CheckbookRequest");
@@ -30,9 +40,9 @@ export const UserProvider = ({ children }) => {
   const renderServiceComponent = () => {
     switch (clickedServiceOption) {
       case "CheckbookRequest":
-        return < CheckbookRequest />;
+        return <CheckbookRequest />;
       case "CheckStatusEnquiry":
-        return < CheckStatusEnquiry />;
+        return <CheckStatusEnquiry />;
       case "BankersChequeRequest":
         return <BankersChequeRequest />;
       case "StopPayment":
@@ -48,7 +58,7 @@ export const UserProvider = ({ children }) => {
       default:
         return null;
     }
-  }
+  };
   const [clickedTransferOption, setClickedTransferOption] =
     useState("Within Bank");
 
