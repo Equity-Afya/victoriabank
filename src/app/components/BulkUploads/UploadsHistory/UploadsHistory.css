@@ -1,0 +1,30 @@
+/* Overall table styling */
+.upload{
+    background-color: #ffffff;
+    margin-top: 3.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header styling */
+th {
+  padding: 10px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+/* Table body styling */
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Emphasize row on hover */
+tr:hover {
+  background-color: blue;
+}

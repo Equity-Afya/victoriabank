@@ -1,0 +1,63 @@
+/* components/ViewChequeRequest.css */
+.view-cheque-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: "Montserrat";
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-cheque-form .form-group {
+  margin-bottom: 15px;
+}
+
+.view-cheque-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #01215b;
+}
+
+.view-cheque-form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #005bb5;
+}
+
+.response-message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #0070f3;
+}

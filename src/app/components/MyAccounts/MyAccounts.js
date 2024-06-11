@@ -16,7 +16,7 @@ const MyAccounts = () => {
     const fetchAccounts = async () => {
       try {
         const response = await axios.get(
-          `http://192.168.88.56:9010/api/v1/account/getAccountsByCustomer?cif=${userData.entity.cif}`
+          `http://192.168.223.198:9010/api/v1/account/getAccountsByCustomer?cif=${userData.entity.cif}`
         );
 
         console.log(response.data);

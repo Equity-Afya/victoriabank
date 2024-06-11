@@ -3,11 +3,11 @@ import './PendingTransactions.css';
 
 const PendingTransactions = () => {
     const transactions = [
-        { date: '2024-06-05', amount: '$4.50', status: 'Pending' },
-        { date: '2024-06-05', amount: '$65.30', status: 'Pending' },
-        { date: '2024-06-06', amount: '$40.00', status: 'Pending' },
-        { date: '2024-06-07', amount: '$9.99', status: 'Pending' },
-        { date: '2024-06-07', amount: '$85.00', status: 'Pending' }
+        { date: '2024-06-04', amount: 'Ksh 20,000', status: 'Pending' },
+        { date: '2024-06-05', amount: 'Ksh 20,000', status: 'Pending' },
+        { date: '2024-06-06', amount: 'Ksh 20,000', status: 'Pending' },
+        { date: '2024-06-07', amount: 'Ksh 20,000', status: 'Pending' },
+        { date: '2024-06-07', amount: 'Ksh 20,000', status: 'Pending' }
     ];
     return (
         <div className="pending">
