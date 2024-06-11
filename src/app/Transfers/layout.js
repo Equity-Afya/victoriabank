@@ -22,23 +22,22 @@ export default function TransfersLayout({ children }) {
 				<Sidebar
 				/>
 			</div>
-
 			<div className={styles.main}>
 				<Header />
 				<div className={styles.main_body}>
 					<div className={styles.main_body_upper}>
 						<div classname={styles.main_body_upper_left}>
 							<div className={styles.MyAccounts}><MyAccounts /></div>
-							<div className={styles.ATMCard}><Transfers/></div>
+							<div className={styles.ATMCard}><Transfers /></div>
 						</div>
 						<div className={styles.main_body_upper_right}>
 							{children}
 						</div>
 					</div>
-                    <div className={styles.buttomcard}>
-                      <Bottomcard />
-                    </div>
-					
+					<div className={styles.buttomcard}>
+						<Bottomcard />
+					</div>
+
 				</div>
 				<Footer />
 			</div>
