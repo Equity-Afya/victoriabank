@@ -15,10 +15,6 @@ function Payments({ onAddBillerClick, onViewBillerClick,onPayBillerClick, onView
         <hr />
         <ul className='ul2' onClick={onItaxClick}>Itax</ul>
         <hr />
-        <ul className='ul2' onClick={onMpesaClick}>Mpesa</ul>
-        <hr />
-        <ul className='ul2' onClick={onAirtimeTopupClick}>AirTime Top up</ul>
-        <hr />
         <ul className='ul2' onClick={onPaymentHistoryClick}>Payment History</ul>
         <hr />
         <ul className='ul2' onClick={onPayBillerClick}>Pay Biller</ul>
