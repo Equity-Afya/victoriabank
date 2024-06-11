@@ -1,26 +1,33 @@
-'use client';
-import { useState } from "react";
+"use client";
+import { useState, useContext } from "react";
 import axios from "axios";
-import Link from 'next/link'; // Import Link from Next.js
-import { useRouter } from 'next/navigation';
-import "./Login.css";
+import Link from "next/link"; // Import Link from Next.js
+import { useRouter } from "next/navigation"; // Import useRouter from Next.js
+import "./login.css";
+import { UserContext } from "@/app/context/UserContext";
 
 const Login = () => {
+    const router = useRouter(); // Initialize useRouter
+
     const [userId, setUserId] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-    const router = useRouter();
 
+    const { setUserData, setUserAccounts } = useContext(UserContext);
 
     const handleLogin = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post("http://192.168.89.13:9010/authentication/login", { userId, password });
-            if (response.data.statuscode = 200) {
+            const response = await axios.post(
+                "http://192.168.223.198:9010/authentication/login",
+                { userId, password }
+            );
+            console.log(response.data);
+            if (response.data.statusCode === 200) {
+                // Corrected the equality check
+                setUserData(response.data);
                 // Redirect to the dashboard page upon successful login
-                // Use Link component to navigate to dashboard
-                // window.location.href
-                router.push = "/dashboard";
+                router.push("/dashboard"); // Use router.push for navigation
             } else {
                 setError("Invalid credentials. Please try again.");
             }
@@ -76,6 +83,9 @@ const Login = () => {
                             <span className="need-help">Need Help?</span>
                         </Link>
                     </div>
+                    <Link href="#register">
+                        Don't have an account? <span className="register">Register</span>
+                    </Link>
                 </div>
             </div>
         </div>
