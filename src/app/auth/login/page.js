@@ -47,7 +47,7 @@ const Login = () => {
             </div>
             <div className="right-side">
                 <div className="logo"></div>
-                <h2>Login</h2>
+                <p>Login</p>
                 <div className="advice">
                     Sign in to continue. Your password is yours, do not share it with
                     anyone.
@@ -83,9 +83,6 @@ const Login = () => {
                             <span className="need-help">Need Help?</span>
                         </Link>
                     </div>
-                    <Link href="#register">
-                        Don't have an account? <span className="register">Register</span>
-                    </Link>
                 </div>
             </div>
         </div>
