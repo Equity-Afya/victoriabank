@@ -16,29 +16,46 @@ function Transfers() {
 
       <div className="lists">
         <hr />
-        <ul onClick={() => setClickedTransferOption("Add")}>Add Beneficiary</ul>
+        <ul onClick={() => setClickedTransferOption("Add")} className="ul4">
+          Add Beneficiary
+        </ul>
         <hr />
-        <ul onClick={() => setClickedTransferOption("View")}>
+        <ul onClick={() => setClickedTransferOption("View")} className="ul4">
           View Beneficiary
         </ul>
         <hr />
-        <ul onClick={() => setClickedTransferOption("Within Bank")}>
+        <ul
+          onClick={() => setClickedTransferOption("Within Bank")}
+          className="ul4"
+        >
           Within Bank
         </ul>
         <hr />
-        <ul onClick={() => setClickedTransferOption("Own Accounts")}>
+        <ul
+          onClick={() => setClickedTransferOption("Own Accounts")}
+          className="ul4"
+        >
           Own Accounts
         </ul>
         <hr />
-        <ul onClick={() => setClickedTransferOption("Rtgs/EFT/Pesalink")}>
+        <ul
+          onClick={() => setClickedTransferOption("Rtgs/EFT/Pesalink")}
+          className="ul4"
+        >
           Rtgs/EFT/Pesalink
         </ul>
         <hr />
-        <ul onClick={() => setClickedTransferOption("SWIFT-International")}>
+        <ul
+          onClick={() => setClickedTransferOption("SWIFT-International")}
+          className="ul4"
+        >
           SWIFT-International
         </ul>
         <hr />
-        <ul onClick={() => setClickedTransferOption("Transfer History")}>
+        <ul
+          onClick={() => setClickedTransferOption("Transfer History")}
+          className="ul4"
+        >
           Transfer History
         </ul>
         <hr />
