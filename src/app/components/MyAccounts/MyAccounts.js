@@ -40,6 +40,7 @@ const MyAccounts = () => {
   };
 
   return (
+
     <div className="my-account">
       <div className="my-account-text">My Accounts</div>
       <div>Select Account</div>
